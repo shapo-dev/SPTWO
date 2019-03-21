@@ -1,0 +1,28 @@
+.btn,a {
+    .reset-border-radius();
+    .transition();
+    background-image: none !important; // RESET LINEAR RAMP
+}
+/* Checkout Button + Add to Cart */ 
+.button--checkout,button.buybox--button {
+    background: @sp-green;
+    color: #fff;
+}
+.button--checkout:hover,button.buybox--button:hover {
+    background: @sp-green-dark;
+    color: #fff;    
+}
+
+.is--holo {
+	border: 2px solid @brand-primary;
+    color: @text-color;	
+
+    &:hover {
+        background: @btn-primary-hover-bg;
+        color: @btn-primary-hover-text-color;
+    }
+
+
+
+}
+

@@ -1,0 +1,46 @@
+* {
+    background-image: none !important;
+    background-color: transparent;
+}
+
+body {
+    .unitize(@font-size-base, 16, font-size);
+    font-family: @font-base-stack;
+    font-weight: @font-base-weight;
+    color: @text-color;
+    background: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+.is--rounded {
+    border-radius: 0;
+}
+.panel.has--border {
+    border:none;
+}
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+    .content-main {
+        .box-shadow(none);
+
+        &:not(.is--small) {
+            .unitize(min-height, 960);
+        }
+    }
+
+    .content-main--inner {
+        .unitize-padding(0, 0, 0);
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+

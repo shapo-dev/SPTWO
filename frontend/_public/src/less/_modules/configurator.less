@@ -1,0 +1,80 @@
+.is--ctl-detail{
+  .configurator--variant{
+     .variant--group{
+       margin: 10px 0px 30px 0px;
+     }
+    .option--label{
+      padding: 0;
+      border: none;
+      border: 1px solid #dadada;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .variant--option{
+      width: 42px;
+      height: 42px;
+      &.is--image{
+        // width: 60px;
+        width: 18.5%;
+        margin-right: 1.5%;
+        height: 70px;
+        label{
+          border: none !important;
+          border-bottom: 2px solid transparent !important;
+
+        }
+        input:checked ~ label {
+          border-bottom: 2px solid black !important;
+        }
+        &:hover{
+          label{
+            border-bottom: 2px solid black !important;
+          }
+        }
+      }
+      input:checked ~ .option--label {
+        box-shadow: none;
+        border: 1px solid black;
+      }
+      .image--element{
+        height: 100%;
+        width: 100%;
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .configurator--form{
+    .variant--group:first-child{
+      p{
+        display: none;
+      }
+    }
+    p:first-child{
+      display: none;
+    }
+    p{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 48em){
+  .is--ctl-detail {
+    .configurator--form p{
+      text-align: left;
+    }
+    .configurator--variant {
+      .variant--option{
+        &.is--image{
+          height: 102px;
+        }
+      }
+    }
+  }
+}

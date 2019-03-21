@@ -1,0 +1,207 @@
+/*
+Main navigation
+==========================================
+Contains the styles of the main navigation of the Shopware storefront.
+
+The main navigation is positioned above the content section.
+
+It contains the viewport specific styles inside media queries.
+*/
+
+/* HIDE HOME BUTTON*/
+li.navigation--entry.is--home {
+    display: none;
+}
+
+.navigation-main {
+    background: #fff;
+    display: none;
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+
+    .navigation-main .navigation--link:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px @brand-primary;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+     top: auto;      
+
+    }
+
+    .navigation-main .navigation--link:hover:after,
+    .is--active .navigation--link:after { 
+        transform: scaleX(1); 
+    }
+
+
+
+    .navigation-main {
+        border-bottom: 1px solid @brand-primary;
+        display: block;
+        position: relative;
+
+        .navigation--list {
+            .clearfix();
+            .unitize-padding(0, 10);
+            margin: 0;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .navigation--entry {
+            display: inline-block;
+            -ms-touch-action: none;
+        }
+
+        .navigation--link {
+            position:relative;
+            .transition(none);
+            .unitize-padding(8, 14);
+            .unitize(font-size, 16);
+            .border-radius-multi(3px, 3px, 0, 0);
+            margin: 0;
+            display: block;
+            cursor: pointer;
+            color: @text-color;
+
+            &:hover { color: @gray-dark; }
+        }
+
+        .is--active .navigation--link {
+            background-color: transparent;
+            background-image: none;
+            font-weight: @font-bold-weight;
+            color: @text-color;
+
+            &:hover { color: @text-color; }
+        }
+    }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+    .navigation-main {
+        .navigation--list {
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation-main .navigation--link {
+    text-transform: uppercase;
+    font-weight: 600;
+    .unitize(font-size , 14);
+    border-bottom: 0px solid transparent;
+
+
+    &:hover {
+        border-color: @brand-primary
+    }
+}
+
+    .is--active .navigation--link {
+        background-image: none !important;
+        background-color: none !important; 
+}
+
+
+
+@media screen and (min-width: @desktopViewportWidth) {
+    .navigation-main {
+        border-top: 1px solid none;
+        border-bottom: 1px solid @gray;
+    }
+    nav.navigation-main.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5000;
+        background:@brand-primary;
+        transition: all 0.5s;
+    }
+    nav.navigation-main.fixed.navigation-main .navigation--link {
+        color: @gray-light;
+    }
+
+
+}
+
+
+
+
+
+/* 
+
+@media screen and (min-width: @tabletViewportWidth) {
+    .navigation-main {
+        border-bottom: 1px solid @brand-primary;
+        display: block;
+        position: relative;
+
+        .navigation--list {
+            .clearfix();
+            .unitize-padding(0, 10);
+            margin: 0;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .navigation--entry {
+            display: inline-block;
+            -ms-touch-action: none;
+        }
+
+        .navigation--link {
+            .transition(none);
+            .unitize-padding(8, 14);
+            .unitize(font-size, 16);
+            .border-radius-multi(3px, 3px, 0, 0);
+            margin: 0;
+            display: block;
+            cursor: pointer;
+            color: @text-color;
+
+            &:hover { color: @brand-primary; }
+        }
+
+        .is--active .navigation--link {
+            .primary-gradient();
+            background-color: transparent;
+            background-image: none;
+            font-weight: @font-bold-weight;
+            color: #fff;
+
+            &:hover { color: #fff; }
+        }
+    }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+    .navigation-main {
+        .navigation--list {
+            padding: 0;
+        }
+    }
+}
+
+*/

@@ -1,0 +1,57 @@
+//social media icons + colors
+.facebook:hover {
+	background-color: @facebook;
+}
+.twitter:hover {
+	background-color: @twitter;
+}
+.youtube:hover {
+	background-color: @youtube;
+}
+.instagram:hover {
+	background-color: @instagrammagenta;
+}
+.pinterest:hover {
+	background-color: @pinterest;
+}
+
+
+//IN FOOTER
+footer .social-media-links li {
+	display: inline-block;
+}
+
+footer .social-media-links li a {
+	display: inline-block;
+	color: @gray-light;
+    .unitize(font-size, 24);
+    .unitize(padding, 10);
+}
+
+
+
+// IN DETAIL PAGE
+ul.share-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: @border-color;
+}
+ul.share-icons li {
+    max-width: 50%;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+ul.share-icons li a {
+    color: @link-color;
+    display: inline-block;
+    padding: 0 5px;
+}
+ul.share-icons li a:hover {
+	color: @sp-pink-dark;
+}
