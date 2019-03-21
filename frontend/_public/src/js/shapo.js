@@ -100,9 +100,9 @@ $(window).scroll(function(){
 });
 
 // STICKY .filter--navigation
-var stickyOffset = $('.sidebar-main.off-canvas').offset().top + 50;
+var stickyOffset = $('.listing--sidebar').offset().top + 50;
 $(window).scroll(function(){
-  var sticky = $('.sidebar-main.off-canvas'),
+  var sticky = $('.listing--sidebar'),
       scroll = $(window).scrollTop();
     
   if (scroll >= stickyOffset) sticky.addClass('fixed');
