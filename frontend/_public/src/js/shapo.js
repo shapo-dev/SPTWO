@@ -99,6 +99,22 @@ $(window).scroll(function(){
   else sticky.removeClass('fixed');
 });
 
+// STICKY .filter--navigation
+var stickyOffset = $('.filter--container').offset().top + 50;
+$(window).scroll(function(){
+  var sticky = $('.filter--container'),
+      scroll = $(window).scrollTop();
+    
+  if (scroll >= stickyOffset) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+
+
+
+
+
+
+
 
 // BACK TO TOP
 $(window).scroll(function() {
@@ -128,7 +144,7 @@ $(".backToTop").click(function() {
 
 
 
-        // OPEN ALL FILTERS
+        // OPEN FIRST 3 FILTERS
         $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel" ).removeClass( "is--collapsed" );
         $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(1)" ).addClass( "is--collapsed js-added" );
         $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(2)" ).addClass( "is--collapsed js-added" );
