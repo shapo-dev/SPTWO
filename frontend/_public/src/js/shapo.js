@@ -129,7 +129,7 @@ $(".backToTop").click(function() {
 
 
         // OPEN ALL FILTERS
-        //$( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:first-child" ).addClass( "is--collapsed" );
+        $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(1)" ).addClass( "is--collapsed js-added" );
 
 
 
