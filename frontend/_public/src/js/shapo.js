@@ -100,14 +100,20 @@ $(window).scroll(function(){
 });
 
 // STICKY .filter--navigation
-var stickyOffset = $('.listing--sidebar').offset().top + 50;
-$(window).scroll(function(){
-  var sticky = $('.listing--sidebar'),
-      scroll = $(window).scrollTop();
-    
-  if (scroll >= stickyOffset) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
-});
+if ($('body.is--ctl-listing.is--act-index').length > 0) { 
+    // it listing exists 
+  var stickyOffset = $('.listing--sidebar').offset().top + 50;
+  $(window).scroll(function(){
+    var sticky = $('.listing--sidebar'),
+        scroll = $(window).scrollTop();
+      
+    if (scroll >= stickyOffset) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
+
+
+}
+
 
 
 
