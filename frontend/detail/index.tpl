@@ -15,11 +15,11 @@
  
             {* Size chart - Link *}
             {block name='frontend_detail_data_sizechart_link'}
-                <strong class="entry--content">
+                <span class="entry--content">
                 	<p class="product--sizechart" data-content="" data-modalbox="true" data-targetselector="a" data-mode="ajax">
                     <a href="/groessentabelle">{s name="SizeChartLink" namespace="frontend/detail/data"}{/s}</a>
                 	</p>
-                </strong>
+                </span>
             {/block}
         </li>
     {/if}
