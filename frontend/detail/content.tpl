@@ -2,10 +2,11 @@
 
 
 
-        {block name="frontend_detail_index_detail"}
-  {$smarty.block.parent}
-  todo
-  {/block}
+{block name="frontend_detail_index_detail"}
+todo
+{$smarty.block.parent}
+
+{/block}
 
 
 
