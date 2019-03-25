@@ -24,7 +24,7 @@
 
 
 {* Adde Social Media Links to Article *}
-{include file="frontend/detail/social-media-share.tpl"}
+{** include file="frontend/detail/social-media-share.tpl" **}
 
 
 {/block}
