@@ -1,4 +1,4 @@
-{extends file='frontend/checkout/cart.tpl'}
+{extends file='fontend/index.tpl'}
 
 {block name='frontend_basket_basket_is_empty'}
 {include file="frontend/index/topbar-usp.tpl"}
