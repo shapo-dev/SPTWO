@@ -172,7 +172,7 @@
             {block name='frontend_basket_basket_is_empty'}
                 
                 <div class="basket-sad">
-                    <i class="ti ti-face-sad icon--huge"></i>
+                    <i class="ti ti-face-sad icon-4x"></i>
                 </div>
                 
                 <div class="basket--info-messages">
