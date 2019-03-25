@@ -170,7 +170,11 @@
         {else}
             {* Empty basket *}
             {block name='frontend_basket_basket_is_empty'}
-                <div class="basket-sad"><i class="ti ti-face-sad"></i></div>
+                
+                <div class="basket-sad">
+                    <i class="ti ti-face-sad icon--huge"></i>
+                </div>
+                
                 <div class="basket--info-messages">
                     {s name="CartInfoEmpty" assign="snippetCartInfoEmpty"}{/s}
                     {include file="frontend/_includes/messages.tpl" type="warning" content=$snippetCartInfoEmpty}
