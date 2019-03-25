@@ -1,1 +1,11 @@
 @font-headline-stack: Playfair Display;
+@font-bold-weight: 600;
+
+//HEADINGS
+h1, h2, h3, h4, h5, h6 {
+    .unitize(line-height, 26);
+    .unitize-margin(28, 0, 10, 0);
+    font-family: @font-headline-stack;
+    font-weight: @font-bold-weight;
+    color: @text-color-dark;
+}
