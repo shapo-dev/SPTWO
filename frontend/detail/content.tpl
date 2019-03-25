@@ -3,9 +3,8 @@
 
 
 {block name="frontend_detail_index_detail"}
-{$smarty.block.parent}
 {include file="frontend/detail/content/usp.tpl"}
-
+{$smarty.block.parent}
 {/block}
 
 
