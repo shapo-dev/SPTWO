@@ -171,7 +171,7 @@
             {* Empty basket *}
             {block name='frontend_basket_basket_is_empty'}
                 
-            {include file="frontend/index/topbar-usp"}
+            {include file="frontend/index/topbar-usp.tpl"}
 
                 <div class="container basket-sad">
                     <i class="ti ti-face-sad icon-4x"></i>
