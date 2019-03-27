@@ -418,7 +418,7 @@ public function createConfigSets(ArrayCollection $collection)
      */
     protected $name = '__theme_name__';
 
-    protected $injectBeforePlugins =  false;
+    protected $injectBeforePlugins =  true;
 
 
     /**
