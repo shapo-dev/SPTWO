@@ -11,8 +11,8 @@
 
 
 {block name="frontend_index_footer"}
-{$smarty.block.parent}
 {if {controllerName|lower} eq 'index' && $theme.newsletter_active !== false}
 {include file="frontend/newsletter/newsletter.tpl"}
 {/if}
+{$smarty.block.parent}
 {/block}
