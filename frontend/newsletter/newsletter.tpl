@@ -32,7 +32,7 @@
 	            <input type="hidden" name="redirect">
 	        {/if}
 	    	<button type="submit" class="newsletter--button btn">
-		    <span class="button--text"><i class="ti ti-email"></i>{s name='IndexFooterNewsletterSubmit'}{/s}</span>
+		    <span class="button--text"><i class="ti ti-email icon-2x"></i>{s name='IndexFooterNewsletterSubmit'}{/s}</span>
 			</button>
 			</div>
 		   	
