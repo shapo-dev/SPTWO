@@ -14,7 +14,7 @@ class Theme extends \Shopware\Components\Theme
     protected $name = 'SPTWO';
 
     /** @var string Description of the theme */
-    protected $description = 'An example theme';
+    protected $description = '__theme_description__';
 
     /** @var string The author of the theme */
     protected $author = 'shopware AG';
