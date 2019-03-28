@@ -23,7 +23,7 @@ class Theme extends \Shopware\Components\Theme
     protected $license = 'MIT';
 
 
-    protected $injectBeforePlugins =  false;
+    protected $injectBeforePlugins =  true;
 
 
 
