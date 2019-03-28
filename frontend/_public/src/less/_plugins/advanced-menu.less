@@ -6,3 +6,14 @@
     .unitize(margin 0);
 }
 
+
+.navigation-main .navigation--list .navigation--entry.is--hovered {
+    .border-radius-multi(0px, 0px);
+    .tap-highlight-color(rgba(0, 0, 0, 0));
+    background: transparent;
+
+    .navigation--link {
+        background: @adv-menu-header-bg;
+        color: @adv-menu-header-text-color;
+    }
+}
