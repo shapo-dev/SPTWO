@@ -23,6 +23,11 @@ class Theme extends \Shopware\Components\Theme
     protected $license = 'MIT';
 
 
+    protected $injectBeforePlugins =  true;
+
+
+
+
 /**
  * @param Form\Container\TabContainer $container
  */
