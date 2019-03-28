@@ -21,4 +21,70 @@ class Theme extends \Shopware\Components\Theme
 
     /** @var string License of the theme */
     protected $license = 'MIT';
+
+
+
+
+
+
+    /** @var array Defines the files which should be compiled by the javascript compressor */
+    protected $javascript = array(
+        'src/js/vendors/moment/moment.min.js',
+        'src/js/vendors/stick-to-me/stick-to-me.js',
+        'src/js/shapo.js',
+        'src/js/hover.desable.js',
+        'src/js/jquery.top-filter.js',
+        'src/js/jquery.search-trigger.js',
+        'src/js/jquery.listing-note.js',
+        'src/js/jquery.override-offcanvas.js',
+
+
+        /*'src/js/vendors/ysExit/ysExit.js',
+        /*'src/js/vendors/progressively/progressively.js',
+        /*'src/js/vendors/ysExit/ysExit.js',*/
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
