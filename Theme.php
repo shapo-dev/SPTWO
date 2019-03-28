@@ -11,7 +11,7 @@ class Theme extends \Shopware\Components\Theme
     protected $extend = 'Responsive';
 
     /** @var string Defines the human readable name */
-    protected $name = 'SPTWO';
+    protected $name = '__theme_name__';
 
     /** @var string Description of the theme */
     protected $description = '__theme_description__';
