@@ -11,19 +11,19 @@ class Theme extends \Shopware\Components\Theme
     protected $extend = 'Responsive';
 
     /** @var string Defines the human readable name */
-    protected $name = 'SPTWO';
+    protected $name = '__theme_name__';
 
     /** @var string Description of the theme */
-    protected $description = 'SPTWO';
+    protected $description = '__theme_description__';
 
     /** @var string The author of the theme */
-    protected $author = 'shopware AG';
+    protected $author = '__author__';
 
     /** @var string License of the theme */
-    protected $license = 'MIT';
+    protected $license = '__license__';
 
 
-    protected $injectBeforePlugins =  true;
+    protected $injectBeforePlugins =  false;
 
 
 
