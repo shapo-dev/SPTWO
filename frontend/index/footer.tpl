@@ -15,7 +15,7 @@
 
 
         {block name='frontend_index_footer_minimal'}
-            {* include file="frontend/index/footer_minimal.tpl" hideCopyrightNotice=true *}
+            {include file="frontend/index/footer_minimal.tpl" hideCopyrightNotice=true}
         {/block}
 
         {* Shopware footer *}
@@ -26,11 +26,6 @@
             {block name="frontend_index_shopware_footer_logo"}
                 <div class="footer--logo">
                  <a class="" href="{url controller='index'}" title="{$sShopname}">
-                {*  if $userInfo}
-                <span class="userInfo">{$userInfo['firstname']} 's </span>
-                {/if *}
-                
-
                 <img class="footer-logo" src="{link file='frontend/_public/src/img/logos/shapo_white.svg'}" alt="{$sShopname}">
                 </a>
                 </div>
