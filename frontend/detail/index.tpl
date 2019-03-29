@@ -1,7 +1,7 @@
 {extends file="parent:frontend/detail/index.tpl"}
 
 {* Append Article SKU with link to size chart *}
-{block name='product--actions'}
+{block name='frontend_detail_data_ordernumber'}
 	{$smarty.block.parent}
     {if $sArticle.ordernumber == true}
         <li class="base-info--entry entry--sku">
