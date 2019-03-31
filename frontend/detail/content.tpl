@@ -4,8 +4,9 @@
 
 {block name="frontend_detail_index_detail"}
 {* include file="frontend/detail/content/usp.tpl" *}
+<div class="product--detail-lower">
 {include file='frontend/index/topbar-usp.tpl'}
-
+</div>
 {$smarty.block.parent}
 {/block}
 
