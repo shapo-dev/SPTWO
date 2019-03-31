@@ -11,7 +11,7 @@
             <div class="image-slider--slide">
 
                 {block name='frontend_detail_image_default_image_slider_item'}
-                    <div class="image--box image-slider--item slick">
+                    <div class="image--box image-slider--item">
 
                         {block name='frontend_detail_image_default_image_element'}
 
