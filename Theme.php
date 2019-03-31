@@ -354,6 +354,8 @@ public function createConfig(Form\Container\TabContainer $container)
     /** @var array Defines the files which should be compiled by the javascript compressor */
     protected $javascript = array(
         // PLUGINS
+        'src/js/vendors/slick/slick.js',
+
         'src/js/vendors/moment/moment.min.js',
         'src/js/vendors/stick-to-me/stick-to-me.js',
 
