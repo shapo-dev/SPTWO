@@ -3,7 +3,9 @@
 
 
 {block name="frontend_detail_index_detail"}
-{include file="frontend/detail/content/usp.tpl"}
+{* include file="frontend/detail/content/usp.tpl" *}
+{include file='frontend/index/topbar-usp.tpl'}
+
 {$smarty.block.parent}
 {/block}
 
