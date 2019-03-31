@@ -4,6 +4,7 @@ document.asyncReady(function() {
 // Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
+var panel = "accordion__answer";
 console.log(i);
 
 for (i = 0; i < acc.length; i++) {
