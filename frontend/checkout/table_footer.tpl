@@ -51,7 +51,7 @@
                 <p class="benefit--text">
                     {s namespace="frontend/checkout/cart" name="CheckoutFooterBenefitTextDispatch"}{/s}
                 </p>
-                //TO DO
+                ...
             {/block}
         </div>
     {/block}
