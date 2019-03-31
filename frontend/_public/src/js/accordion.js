@@ -8,7 +8,7 @@ var panel = "accordion__answer";
 
 for (i = 0; i < acc.length; i++) {
 
-  console.log(i);
+  console.log(i + panel);
 
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
