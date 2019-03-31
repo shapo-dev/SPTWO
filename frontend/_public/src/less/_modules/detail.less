@@ -199,7 +199,7 @@
     }
   }
 }
-@media screen and (min-width: 64em){
+@media screen and (min-width: tabletLandscapeViewportWidth){
   .product--details {
     .product--image-container{
       width: 58%;
@@ -210,12 +210,17 @@
      }
   }
 }
-@media screen and (min-width: 78.75em){
-  .product--detail-lower {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@media screen and (min-width: @desktopViewportWidth){
+.product--detail-lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    padding: 1em;
+    border-bottom: 1px solid #efefef;
+    .unitize(font-size, 14);
+  }
+ 
   .product--detail-lower .usp {
   max-width: 33%;
 }
