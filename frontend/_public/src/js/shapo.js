@@ -9,6 +9,9 @@ document.asyncReady(function() {
 
 
 $('.slick').slick({
+  centerMode: true,
+  centerPadding: '5px',
+
   dots: true,
   infinite: false,
   speed: 300,
