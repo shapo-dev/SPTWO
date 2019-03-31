@@ -4,6 +4,9 @@
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
  */
 
+document.asyncReady(function() {
+    // do your magic here  
+
 
 
  // Begin init
@@ -160,27 +163,14 @@ $(".backToTop").click(function() {
 
 
 
-// Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-console.log(i);
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-
-
-
 
 console.log( "end init || console sleep")
 });
 })(jQuery, this);
+
+
+
+
+
+});
+
