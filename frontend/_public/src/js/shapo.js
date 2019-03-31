@@ -146,10 +146,10 @@ $(".backToTop").click(function() {
         $(mailField).focus();
         //console.log(mailField);
 
-        var firstname = document.getElementById('firstname');
-        $(firstname).attr('autofocus', 'true');
-        $(firstname).focus();
-        console.log(firstname);
+        // var firstname = document.getElementById('firstname');
+        // $(firstname).attr('autofocus', 'true');
+        // $(firstname).focus();
+        // console.log(firstname);
 
 
 
