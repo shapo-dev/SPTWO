@@ -356,15 +356,15 @@ public function createConfig(Form\Container\TabContainer $container)
         // PLUGINS
         'src/js/vendors/moment/moment.min.js',
         'src/js/vendors/stick-to-me/stick-to-me.js',
-        'src/js/accordion.js',
 
         // SHAPO STUFF
         'src/js/shapo.js',
-        'src/js/hover.desable.js',
-        'src/js/jquery.top-filter.js',
-        'src/js/jquery.search-trigger.js',
-        'src/js/jquery.listing-note.js',
-        'src/js/jquery.override-offcanvas.js',
+        
+        //'src/js/hover.desable.js',
+        //'src/js/jquery.top-filter.js',
+        //'src/js/jquery.search-trigger.js',
+        //'src/js/jquery.listing-note.js',
+        //'src/js/jquery.override-offcanvas.js',
 
 
         /*'src/js/vendors/ysExit/ysExit.js',
