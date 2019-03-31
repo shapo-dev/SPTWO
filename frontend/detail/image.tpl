@@ -7,8 +7,8 @@
 
     {* Product image - Gallery *}
     {block name="frontend_detail_image_box"}
-        <div class="image-slider--container{if !$sArticle.image} no--image{/if}{if !count($sArticle.images)} no--thumbnails{/if}">
-            <div class="slick">
+        <div class="slick{if !$sArticle.image} no--image{/if}{if !count($sArticle.images)} no--thumbnails{/if}">
+            <div class="image-slider--slide">
 
                 {block name='frontend_detail_image_default_image_slider_item'}
                     <div class="image--box image-slider--item">
