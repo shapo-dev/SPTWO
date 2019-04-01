@@ -8,31 +8,31 @@ document.asyncReady(function() {
     // do your magic here  
 
 
-$('.slick').slick({
+$('.usp--container').slick({
   centerMode: true,
   centerPadding: '5px',
 
-  dots: true,
-  infinite: false,
+  dots: false,
+  infinite: true,
   speed: 300,
-  slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToShow: 3,
+  slidesToScroll: 3,
   
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
