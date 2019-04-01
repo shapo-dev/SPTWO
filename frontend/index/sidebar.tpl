@@ -10,7 +10,7 @@
     </div>
 {else}
 <div id="logout_button">
-    <a href="{url controller='account' action='logout'}" class="logout btn is--full is--center is--holo">
+    <a href="{url controller='account' action='logout'}" class="logout btn is--full is--center is--primary">
     <i class="ti ti-lock"></i>
     {s name="AccountLogout" namespace="frontend/account/sidebar"}{/s}</a>
 </div>
