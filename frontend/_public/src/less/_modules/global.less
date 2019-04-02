@@ -1,3 +1,19 @@
+@media screen and(min-width: @tabletViewportWidth) {
+    .content-main {
+        .box-shadow();
+
+        &:not(.is--small) {
+            .unitize(min-height, 750);
+        }
+    }
+
+    .content-main--inner {
+        .unitize-padding(0, 30, 16);
+        width: 100%;
+    }
+}
+
+
 .privacy-information {
     .unitize(font-size, 12);
      line-height: 1.2;
