@@ -67,8 +67,8 @@ $('.slick').slick({
 
 
 
-
-$('.navigation-main').find('SALE').addClass('sale');
+// ADD SALE CLASS
+$('a.navigation--link').find('SALE').addClass('sale');
 
 
 
