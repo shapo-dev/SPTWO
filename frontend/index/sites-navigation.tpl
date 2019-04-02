@@ -39,7 +39,7 @@
         <div class="shop-sites--container is--rounded">
             {block name='frontend_index_left_menu_headline'}
                 <div class="shop-sites--headline navigation--headline">
-                    {s namespace='frontend/index/menu_left' name="MenuLeftHeadingInformation"}{/s}
+                    {*s namespace='frontend/index/menu_left' name="MenuLeftHeadingInformation"}{/s *}
                 </div>
             {/block}
 
