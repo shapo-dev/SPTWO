@@ -1,25 +1,30 @@
+
 .btn,a {
     .reset-border-radius();
     .transition();
- 
-
-    .is--holo {
-        border: 2px solid @brand-primary;
-        color: @text-color; 
-
-        &:hover {
-            background: @btn-primary-hover-bg;
-            color: @btn-primary-hover-text-color;
-        }
-
-        /* Checkout Button + Add to Cart */ 
-        .button--checkout,button.buybox--button {
-            background: @sp-green;
-            color: #fff;
-        }
-        .button--checkout:hover,button.buybox--button:hover {
-            background: @sp-green-dark;
-            color: #fff;    
-        }
+    
 }
+/* Checkout Button + Add to Cart */ 
+.button--checkout,button.buybox--button {
+    background: @sp-green;
+    color: #fff;
 }
+.button--checkout:hover,button.buybox--button:hover {
+    background: @sp-green-dark;
+    color: #fff;    
+}
+
+.is--holo {
+	border: 2px solid @brand-primary;
+    color: @text-color;	
+
+    &:hover {
+        background: @btn-primary-hover-bg;
+        color: @btn-primary-hover-text-color;
+    }
+
+
+
+}
+
+
