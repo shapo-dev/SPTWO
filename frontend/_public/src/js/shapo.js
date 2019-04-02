@@ -71,7 +71,7 @@ $('.slick').slick({
 $('.navigation-main').find('SALE').addClass('sale');
 
 
-var goto = "ul.sidebar--navigation.categories--sublevel.navigation--list li a";
+var goto = ".sidebar--navigation.categories--sublevel.navigation--list .sidebar--navigation .navigation--link";
 $(goto).removeClass('link--go-forward');
 console.log(goto);
 
