@@ -61,6 +61,12 @@
 $('.navigation-main').find('SALE').addClass('sale');
 
 
+$('ul.sidebar--navigation.categories--sublevel.navigation--list').find('a').removeClass('link--go-forward');
+
+
+
+
+
 // LANGUAGE
 var lang = $('html').attr('lang');
 var langcode = [];
