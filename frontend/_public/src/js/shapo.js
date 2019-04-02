@@ -71,7 +71,8 @@ $('.slick').slick({
 $('.navigation-main').find('SALE').addClass('sale');
 
 
-$('ul.sidebar--navigation.categories--sublevel.navigation--list').find('a').removeClass('link--go-forward');
+var goto = "ul.sidebar--navigation.categories--sublevel.navigation--list li a"
+$(goto).removeClass('link--go-forward');
 
 
 
