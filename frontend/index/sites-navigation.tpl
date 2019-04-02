@@ -7,7 +7,7 @@
             {foreach $customPages as $page}
                 {block name='frontend_index_left_menu_entry'}
                     <li class="navigation--entry{if $page.active} is--active{/if}" role="menuitem">
-                        <a class="navigation--link{if $page.active} is--active{/if}{if $page.childrenCount} link--go-forward{/if}"
+                        <a class="navigation--link{if $page.active} is--active{/if}{if $page.childrenCount} {* link--go-forward *}{/if}"
                            href="{if $page.link}{$page.link}{else}{url controller='custom' sCustom=$page.id title=$page.description}{/if}"
                            title="{$page.description|escape}"
                            data-categoryId="{$page.id}"
