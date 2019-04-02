@@ -4,6 +4,16 @@
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
  */
 
+document.asyncReady(function() {
+    // do your magic here  
+
+
+$('.slick').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
 
 
  // Begin init
@@ -149,10 +159,10 @@ $(".backToTop").click(function() {
         $(mailField).focus();
         //console.log(mailField);
 
-        var firstname = document.getElementById('firstname');
-        $(firstname).attr('autofocus', 'true');
-        $(firstname).focus();
-        console.log(firstname);
+        // var firstname = document.getElementById('firstname');
+        // $(firstname).attr('autofocus', 'true');
+        // $(firstname).focus();
+        // console.log(firstname);
 
 
 
@@ -167,10 +177,13 @@ $(".backToTop").click(function() {
 
 
 
-
-
-
-
 console.log( "end init || console sleep")
 });
 })(jQuery, this);
+
+
+
+
+
+});
+

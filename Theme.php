@@ -353,9 +353,15 @@ public function createConfig(Form\Container\TabContainer $container)
 
     /** @var array Defines the files which should be compiled by the javascript compressor */
     protected $javascript = array(
+        // PLUGINS
+        'src/js/vendors/slick/slick.js',
+
         'src/js/vendors/moment/moment.min.js',
         'src/js/vendors/stick-to-me/stick-to-me.js',
+
+        // SHAPO STUFF
         'src/js/shapo.js',
+        
         'src/js/hover.desable.js',
         'src/js/jquery.top-filter.js',
         'src/js/jquery.search-trigger.js',

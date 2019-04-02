@@ -71,16 +71,15 @@ li.navigation--entry.is--home {
             cursor: pointer;
             color: @text-color;
 
-            &:hover { color: @gray-dark; }
+            &:hover { color: @text-color; }
         }
 
         .is--active .navigation--link {
             background-color: transparent;
             background-image: none;
-            font-weight: @font-bold-weight;
             color: @text-color;
 
-            &:hover { color: @text-color; }
+            &:hover { color: @link-hover-color; }
         }
     }
 }
@@ -108,8 +107,8 @@ li.navigation--entry.is--home {
 
 .navigation-main .navigation--link {
     text-transform: uppercase;
-    font-weight: 600;
-    .unitize(font-size , 14);
+    font-weight: @font-bold-weight;
+    .unitize(font-size , 16);
     border-bottom: 0px solid transparent;
 
 
