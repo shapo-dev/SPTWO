@@ -15,7 +15,7 @@
 
                         {if $category.childrenCount}
                             <span class="is--icon-right">
-                                <i class="icon--arrow-right"></i>
+                                <i class="ti ti-angle-down"></i>
                             </span>
                         {/if}
                     </a>
