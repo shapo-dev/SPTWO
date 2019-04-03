@@ -13,12 +13,8 @@ if ( $('body').is('.is--ctl-listing.is--act-index') ) {
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(1)" ).addClass( "is--collapsed js-added" );
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(2)" ).addClass( "is--collapsed js-added" );
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(3)" ).addClass( "is--collapsed js-added" );
-    //do something it does have the protected class!
-    console.log('is--ctl-listing:' + true);
-}
 
 // STICKY .shop--navigation
-if ($('body.is--ctl-listing.is--act-index').length > 0) { 
 var stickyOffset = $('nav.navigation-main').offset().top + 50;
 $(window).scroll(function(){
   var sticky = $('nav.navigation-main'),
@@ -27,11 +23,9 @@ $(window).scroll(function(){
   if (scroll >= stickyOffset) sticky.addClass('fixed');
   else sticky.removeClass('fixed');
   });
-}
+
 
 // STICKY .filter--navigation
-if ($('body.is--ctl-listing.is--act-index').length > 0) { 
-    // it listing exists 
   var stickyOffset = $('.listing--sidebar').offset().top + 50;
   $(window).scroll(function(){
     var sticky = $('.listing--sidebar'),
