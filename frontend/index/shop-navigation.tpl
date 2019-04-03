@@ -5,7 +5,7 @@
         <a class="entry--link entry--trigger btn is--icon-left" href="#offcanvas--left" data-offcanvas="true" data-offCanvasSelector=".sidebar-main">
             <i class="ti ti-layout-line-solid"></i>
             <i class="ti ti-layout-line-solid"></i>
-            {s namespace='frontend/index/menu_left' name="IndexLinkMenu"}{/s}
+            <span class="menu--text">{s namespace='frontend/index/menu_left' name="IndexLinkMenu"}{/s}</span>
         </a>
     </li>
 {/block}
