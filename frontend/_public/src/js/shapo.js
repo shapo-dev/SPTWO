@@ -6,5 +6,5 @@ $("[title|='SALE']").addClass('sale');
 
 
 
-console.log(this + "init")
+console.log('SHAPO ' + 'init')
 })(jQuery, window);
