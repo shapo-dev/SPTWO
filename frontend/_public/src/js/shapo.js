@@ -14,7 +14,7 @@ if ( $('body').is('.is--ctl-listing.is--act-index') ) {
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(2)" ).addClass( "is--collapsed js-added" );
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(3)" ).addClass( "is--collapsed js-added" );
     //do something it does have the protected class!
-    console.log(true);
+    console.log('is--ctl-listing:' + true);
 }
 
 
