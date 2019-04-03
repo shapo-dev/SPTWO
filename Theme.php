@@ -353,25 +353,24 @@ public function createConfig(Form\Container\TabContainer $container)
 
     /** @var array Defines the files which should be compiled by the javascript compressor */
     protected $javascript = array(
-        // PLUGINS
-        'src/js/vendors/slick/slick.js',
-
-        'src/js/vendors/moment/moment.min.js',
-        'src/js/vendors/stick-to-me/stick-to-me.js',
-
-        // SHAPO STUFF
-        'src/js/shapo.js',
-        
+        //SHOPWARE 
+        'src/js/jquery.shopware-responsive.js',
         'src/js/hover.desable.js',
         'src/js/jquery.top-filter.js',
         'src/js/jquery.search-trigger.js',
         'src/js/jquery.listing-note.js',
         'src/js/jquery.override-offcanvas.js',
 
+        // PLUGINS
+        'src/js/vendors/slick/slick.js',
+        'src/js/vendors/moment/moment.min.js',
+        'src/js/vendors/stick-to-me/stick-to-me.js',
 
-        /*'src/js/vendors/ysExit/ysExit.js',
-        /*'src/js/vendors/progressively/progressively.js',
-        /*'src/js/vendors/ysExit/ysExit.js',*/
+        // SHAPO STUFF
+        'src/js/shapo.js',
+        
+
+
     );
 
 
