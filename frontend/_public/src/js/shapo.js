@@ -8,7 +8,7 @@ console.log("LANGUAGE: " +  lang);
 $("[title|='SALE']").addClass('sale');
 
 // OPEN FIRST 3 FILTERS
-if ( $('body').is('.pretty.awesome') ) {
+if ( $('body').is('.is--ctl-listing.is--act-index') ) {
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel" ).removeClass( "is--collapsed" );
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(1)" ).addClass( "is--collapsed js-added" );
   $( ".listing--sidebar .sidebar-filter .filter--container .filter-panel:nth-child(2)" ).addClass( "is--collapsed js-added" );
