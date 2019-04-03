@@ -354,7 +354,7 @@ public function createConfig(Form\Container\TabContainer $container)
     /** @var array Defines the files which should be compiled by the javascript compressor */
     protected $javascript = array(
         //SHOPWARE 
-        'src/js/jquery.shopware-responsive.js',
+
         'src/js/hover.desable.js',
         'src/js/jquery.top-filter.js',
         'src/js/jquery.search-trigger.js',
