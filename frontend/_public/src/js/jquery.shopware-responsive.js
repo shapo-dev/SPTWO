@@ -30,7 +30,7 @@
     window.StateManager
 
         // OffCanvas menu
-        .addPlugin('*[data-offcanvas="true"]', 'swOffcanvasMenu', ['xs', 's', 'l'])
+        .addPlugin('*[data-offcanvas="true"]', 'swOffcanvasMenu', ['xs', 's', 'm'])
 
         // Datepicker
         .addPlugin('*[data-datepicker="true"]', 'swDatePicker')
