@@ -16,7 +16,7 @@ console.log("LANGUAGE: " +  lang);
 
  // OFFERS TIMER
     var $clock = $('#clock'),
-        eventTime = moment('24-12-2018 23:59:59', 'DD-MM-YYYY HH:mm:ss').unix(),
+        eventTime = moment('08-04-2019 23:59:59', 'DD-MM-YYYY HH:mm:ss').unix(),
         currentTime = moment().unix(),
         diffTime = eventTime - currentTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
