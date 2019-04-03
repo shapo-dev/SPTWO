@@ -117,6 +117,19 @@ console.log(bodyClass);
 
 
 
+
+
+// FEAT SLIDER
+$('.product--detail-lower').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+
+
+
 // BACK TO TOP
 $(window).scroll(function() {
     $(this).scrollTop() >= 200 ? $(".backToTop").fadeIn() : $(".backToTop").fadeOut()
