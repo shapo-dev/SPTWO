@@ -170,5 +170,22 @@ $(".backToTop").click(function() {
     }, 400)
 });  
 
+
+
+
+
+        //FOCUS INPUT FIELD -- TODO
+        var mailField = document.getElementById('FormField_EmailAddress');
+        $(mailField).attr('autofocus', 'true');
+        $(mailField).focus();
+        //console.log(mailField);
+
+        // var firstname = document.getElementById('firstname');
+        // $(firstname).attr('autofocus', 'true');
+        // $(firstname).focus();
+        // console.log(firstname);
+
+
+
 console.log('SHAPO ' + 'init')
 })(jQuery, window);
