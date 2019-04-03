@@ -8,7 +8,7 @@ console.log("LANGUAGE: " +  lang);
 $("[title|='SALE']").addClass('sale');
 
 // EXIT INTENT
-var bodyClass = '.is--ctl-listing.is--act-index' ;
+var bodyClass = '.is--ctl-index.is--act-index' ;
 if ( $('body').is(bodyClass) ) {
   $.stickToMe({
     layer: '#stickLayer',      
