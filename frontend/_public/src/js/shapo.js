@@ -1,5 +1,7 @@
 (function($, window) {
 
+// ADD SALE CLASS
+$("[title|='SALE']").addClass('sale');
 
 
 
