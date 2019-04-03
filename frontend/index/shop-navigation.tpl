@@ -3,7 +3,9 @@
 {block name='frontend_index_offcanvas_left_trigger'}
     <li class="navigation--entry entry--menu-left" role="menuitem">
         <a class="entry--link entry--trigger btn is--icon-left" href="#offcanvas--left" data-offcanvas="true" data-offCanvasSelector=".sidebar-main">
-            <i class="ti ti-layout-line-solid"></i><i class="ti ti-layout-line-solid"></i><i class="ti ti-layout-line-solid"></i> {s namespace='frontend/index/menu_left' name="IndexLinkMenu"}{/s}
+            <i class="ti ti-layout-line-solid"></i>
+            <i class="ti ti-layout-line-solid"></i>
+            {s namespace='frontend/index/menu_left' name="IndexLinkMenu"}{/s}
         </a>
     </li>
 {/block}
