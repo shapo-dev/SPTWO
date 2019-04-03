@@ -17,6 +17,31 @@ if ( $('body').is('.is--ctl-listing.is--act-index') ) {
     console.log('is--ctl-listing:' + true);
 }
 
+// STICKY .shop--navigation
+if ($('body.is--ctl-listing.is--act-index').length > 0) { 
+var stickyOffset = $('nav.navigation-main').offset().top + 50;
+$(window).scroll(function(){
+  var sticky = $('nav.navigation-main'),
+      scroll = $(window).scrollTop();
+    
+  if (scroll >= stickyOffset) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+  });
+}
+
+// STICKY .filter--navigation
+if ($('body.is--ctl-listing.is--act-index').length > 0) { 
+    // it listing exists 
+  var stickyOffset = $('.listing--sidebar').offset().top + 50;
+  $(window).scroll(function(){
+    var sticky = $('.listing--sidebar'),
+        scroll = $(window).scrollTop();
+      
+    if (scroll >= stickyOffset) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+  });
+}
+
 
 
 // BACK TO TOP
