@@ -4,6 +4,11 @@ var lang = $('html').attr('lang');
 var langcode = [];
 console.log("LANGUAGE: " +  lang);
 
+
+// OffCanvas menu
+        .addPlugin('*[data-offcanvas="true"]', 'swOffcanvasMenu', ['xs', 's', 'l'])
+
+
 // ADD SALE CLASS
 $("[title|='SALE']").addClass('sale');
 
