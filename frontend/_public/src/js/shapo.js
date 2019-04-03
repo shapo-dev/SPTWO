@@ -7,6 +7,28 @@ console.log("LANGUAGE: " +  lang);
 // ADD SALE CLASS
 $("[title|='SALE']").addClass('sale');
 
+// EXIT INTENT
+var bodyClass = '.is--ctl-listing.is--act-index' ;
+if ( $('body').is(bodyClass) ) {
+  $.stickToMe({
+    layer: '#stickLayer',      
+    fadespeed: 400,
+    trigger: ['top'],
+    maxtime : 0,
+    mintime : 0,
+    delay: 0,
+    interval: 0,
+    maxamount : 1,
+    cookie : true,
+    bgclickclose : true,
+    escclose : true,
+    onleave : function (e) {},
+    disableleftscroll : true  // chrome disable   
+  });
+}
+
+
+
 // OPEN FIRST 3 FILTERS
 var bodyClass = '.is--ctl-listing.is--act-index' ;
 if ( $('body').is(bodyClass) ) {
