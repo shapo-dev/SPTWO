@@ -18,5 +18,16 @@ if ( $('body').is('.is--ctl-listing.is--act-index') ) {
 }
 
 
+
+// BACK TO TOP
+$(window).scroll(function() {
+    $(this).scrollTop() >= 200 ? $(".backToTop").fadeIn() : $(".backToTop").fadeOut()
+    }),
+$(".backToTop").click(function() {
+    $("body,html").animate({
+            scrollTop: 0
+    }, 400)
+});  
+
 console.log('SHAPO ' + 'init')
 })(jQuery, window);
