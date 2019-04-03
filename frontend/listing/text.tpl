@@ -1,6 +1,6 @@
 {extends file="parent:frontend/listing/text.tpl"}
 
-{* Headline *}
+{* Headline 
  {block name="frontend_listing_text_headline"}
     {if $sCategoryContent.media}
         <div class="shapo--category-hero-image">
@@ -16,3 +16,5 @@
      {$smarty.block.parent}
  </div>
 {/block}
+*}
+
