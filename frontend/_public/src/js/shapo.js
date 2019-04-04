@@ -119,7 +119,7 @@ console.log(bodyClass);
 
 
 // FEAT SLIDER
-$('.product--detail-lower').slick({
+$('.slick--content-detail').slick({
   dots: false,
   infinite: false,
   speed: 300,
@@ -145,7 +145,7 @@ $('.product--detail-lower').slick({
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 478,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
