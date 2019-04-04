@@ -273,3 +273,49 @@
     }
   }
 }
+
+
+
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+
+    .box--basic {
+        .image--top(180);
+        width: 50%;
+    }
+
+    .box--minimal {
+        width: 33%;
+    }
+
+    .box--image {
+        .image--top(280);
+        width: 50%;
+    }
+
+    .is--ctl-search,
+    .is--ctl-listing.is--no-sidebar {
+        .box--basic {
+            .image--left(170);
+        }
+
+        .box--minimal {
+            width: 20%;
+        }
+
+        .box--image {
+            width: 33.3%;
+        }
+
+        .has--sidebar-filter {
+            .box--basic {
+                .image--top(180);
+                width: 50%;
+            }
+
+            .box--minimal {
+                width: 25%;
+            }
+        }
+    }
+}
