@@ -49,14 +49,14 @@
       //     }
       //   }
     .product--image{
-      background: #f7f7f7;
+      background: #f6f6f6;
       .unitize(height, 260);
       .image--media{
         img{
-          object-fit: cover;
+          object-fit: contain;
           width: 100%;
-          object-position: bottom;
-          .unitize(padding, 20);
+          object-position: center;
+          .unitize(padding, 0);
         }
       }
     }
@@ -145,7 +145,7 @@
 .product--box{
    .product--image{
       .image--element{
-          background-color: #f2f2f2;
+          background-color: #f6f6f6;
           img{
             mix-blend-mode: darken;
           }
