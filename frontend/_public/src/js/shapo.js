@@ -123,7 +123,7 @@ $('.slick--content-detail').slick({
   dots: false,
   infinite: false,
   speed: 300,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   slidesToShow: 3,
   slidesToScroll: 3,
