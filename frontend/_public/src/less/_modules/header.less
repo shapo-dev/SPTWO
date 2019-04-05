@@ -1,4 +1,40 @@
 @media screen and (min-width: @phoneLandscapeViewportWidth) {
+
+        // Small Checkout & Registration Header
+    .is--ctl-checkout.is--minimal-header,
+    .is--ctl-register.is--minimal-header,
+    .is--ctl-register.is--minimal-header.is--target-checkout {
+
+        // Header Support Info
+        .header-main {
+            .logo-main { width: 100%; }
+            .logo--shop { width: 50% }
+
+
+            .logo--link picture {
+                .unitize-height(40);
+                width: 165px;
+            }
+
+
+            .logo--link { .unitize(margin-top, 10); }
+
+            .logo--supportinfo { display: none; }
+            border-bottom: 1px solid @gray;
+
+            .btn--back-top-shop {
+                .unitize(margin-top, 10);
+                width: 40%;
+                float: right;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+
+
   .entry--search .main-search--form .main-search--field {
       background:transparent;
   }
