@@ -15,6 +15,12 @@
 {if {controllerName|lower} eq 'index' && $theme.newsletter_active !== false}
 {include file="frontend/newsletter/newsletter.tpl"}
 {/if}
+
+
+{* USP SLIDER *}
+{include file='frontend/detail/content/usp.tpl'}
+
+
 {$smarty.block.parent}
 
 
