@@ -7,7 +7,14 @@
 {include file="frontend/index/offers.tpl"}
 {/if}
 {$smarty.block.parent}    
+
+{* USP SLIDER *}
+{include file='frontend/detail/content/usp.tpl'}
+
 {/block}
+
+
+
 
 
 {* Footer Newsletter + backtop + stick *}
@@ -15,13 +22,8 @@
 {if {controllerName|lower} eq 'index' && $theme.newsletter_active !== false}
 {include file="frontend/newsletter/newsletter.tpl"}
 {/if}
-
-
-{* USP SLIDER *}
-{include file='frontend/detail/content/usp.tpl'}
-
-
 {$smarty.block.parent}
+
 
 
 
