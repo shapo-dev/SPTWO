@@ -9,6 +9,7 @@
         min-height: 90px;
         box-shadow: none;
 
+
         .logo--tagline {
           .is--hidden();
         }
@@ -17,8 +18,8 @@
         .logo--shop { width: 100% }
         .logo--link { .unitize(margin-top, 10); }
 
-        .logo--supportinfo { display: none; }
-        border-bottom: 1px solid @brand-primary;
+        .logo--supportinfo {.is--hidden(); }
+        border-bottom: 1px solid @gray;
 
         .btn--back-top-shop {
           .is--hidden();
