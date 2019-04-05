@@ -121,10 +121,10 @@ console.log(bodyClass);
 // FEAT SLIDER
 $('.slick--content-detail').slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
-  autoplay: false,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   slidesToShow: 3,
   slidesToScroll: 3,
   responsive: [
