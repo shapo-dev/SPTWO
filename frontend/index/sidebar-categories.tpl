@@ -10,6 +10,9 @@
                         data-categoryId="{$category.id}"
                         data-fetchUrl="{url module=widgets controller=listing action=getCategory categoryId={$category.id}}"
                         title="{$category.description|escape}"
+           
+                        {if $sCategoryContent.media}
+
                         {if $category.external && $category.externalTarget}target="{$category.externalTarget}"{/if}>
                         {$category.description}
                         {if $category.childrenCount}
@@ -18,7 +21,7 @@
                             </span>
                         {/if}
 
-                        {if $sCategoryContent.media}
+     
                                   <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
                         {/if}
 
