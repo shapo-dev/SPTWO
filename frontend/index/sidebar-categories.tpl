@@ -12,12 +12,12 @@
                         title="{$category.description|escape}"
                         {if $category.external && $category.externalTarget}target="{$category.externalTarget}"{/if}>
                         {$category.description}
-
                         {if $category.childrenCount}
                             <span class="is--icon-right">
                                 <i class="ti ti-angle-right"></i>
                             </span>
                         {/if}
+
                     </a>
                     {block name="frontend_index_categories_left_entry_subcategories"}
                         {if $category.subcategories}
