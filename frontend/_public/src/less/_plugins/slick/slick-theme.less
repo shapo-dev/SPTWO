@@ -208,24 +208,11 @@ body.is--ctl-index.is--act-index .detail--usp-content {
 }
 
 @media screen and (max-width: @tabletViewportWidth) {
-body.is--ctl-index.is--act-index .detail--usp-content {
-display: block;
+    body.is--ctl-index.is--act-index .detail--usp-content {
+    display: block;
+        .usp--panels {
+            
 
-    .usp--panels {
-
-        .usp--panel {
-            .unitize-padding(15);
-        
-        span {
-                font-weight: 600;
-                .unitize(font-size, 14);
-                color: @brand-primary;
-            }
-        
-            i {
-                .unitize(font-size, 16);
-                color: @sp-green;
-            }
         }
-    }
+
 }
