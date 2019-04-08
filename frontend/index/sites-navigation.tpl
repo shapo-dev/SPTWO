@@ -5,6 +5,9 @@
 
         {block name='frontend_index_left_menu_entries'}
             {foreach $customPages as $page}
+
+               {if $sCategoryContent.media}
+
                 {block name='frontend_index_left_menu_entry'}
                     <li class="navigation--entry{if $page.active} is--active{/if}" role="menuitem">
                         <a class="navigation--link{if $page.active} is--active{/if}{if $page.childrenCount} is--debug{/if}"
@@ -21,7 +24,6 @@
                             </span>
                             {/if}
                         
-                        {if $sCategoryContent.media}
                                   <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
                         {/if}
 
