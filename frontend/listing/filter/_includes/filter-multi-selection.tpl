@@ -71,6 +71,8 @@
 
                                                             {if $facet|is_a:'\Shopware\Bundle\SearchBundle\FacetResult\MediaListFacetResult'}
                                                                 {$mediaFile = {link file='frontend/_public/src/img/no-picture.jpg'}}
+                                                                <span class="option--text">{$option->getLabel()|escape}</span>
+
                                                                 {if $option->getMedia()}
                                                                     {$mediaFile = $option->getMedia()->getFile()}
                                                                 {/if}
