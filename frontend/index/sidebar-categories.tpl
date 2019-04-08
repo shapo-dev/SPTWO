@@ -18,6 +18,11 @@
                             </span>
                         {/if}
 
+                        {if $sCategoryContent.media}
+                                  <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
+                        {/if}
+
+
                     </a>
                     {block name="frontend_index_categories_left_entry_subcategories"}
                         {if $category.subcategories}
