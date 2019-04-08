@@ -174,12 +174,16 @@
     .is--hidden();
 }
 
-@media screen and (min-width: @phoneLandscapeViewportWidth) {
-.usp--panels{
+@media screen and (max-width: @tabletViewportWidth) {
+ .detail--usp-content {
+.is--visible();
+
+.usp--panels {
   display: inline-block;
   flex-wrap: wrap;
   justify-content: space-between;
-  .usp--panel{
+
+.usp--panel{
     width: 25%;
     margin-bottom: 2em;
     display: flex;
@@ -188,7 +192,7 @@
     .unitize-padding(15);
     .unitize(padding-left, 35);
         position: relative;
-    span{
+ span {
       font-weight: 600;
       .unitize(font-size, 12);
     }
@@ -202,6 +206,8 @@
     justify-content: center;
     padding: 5px;
   }
+}
+
 }
 
 
