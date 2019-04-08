@@ -8,9 +8,10 @@
 {/if}
 {$smarty.block.parent}    
 
+{if {controllerName|lower} eq 'index' && $theme.topbar_active !== false}
 {* USP SLIDER *}
 {include file='frontend/detail/content/usp.tpl'}
-
+{/if}
 {/block}
 
 
