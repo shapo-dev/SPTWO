@@ -6,17 +6,20 @@
         {block name='frontend_index_left_menu_entries'}
             {foreach $customPages as $page}
 
-               {if $sCategoryContent.media}
-
                 {block name='frontend_index_left_menu_entry'}
                     <li class="navigation--entry{if $page.active} is--active{/if}" role="menuitem">
+
                         <a class="navigation--link{if $page.active} is--active{/if}{if $page.childrenCount} is--debug{/if}"
                            href="{if $page.link}{$page.link}{else}{url controller='custom' sCustom=$page.id title=$page.description}{/if}"
                            title="{$page.description|escape}"
                            data-categoryId="{$page.id}"
                            data-fetchUrl="{url module=widgets controller=listing action=getCustomPage pageId={$page.id}}"
                            {if $page.target}target="{$page.target}"{/if}>
-                            {$page.description}
+                           {$page.description}
+
+                            {if $sCategoryContent.media}
+                            <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
+                            {/if}
 
                             {if $page.childrenCount}
                                 <span class="is--icon-right">
@@ -24,8 +27,7 @@
                             </span>
                             {/if}
                         
-                                  <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
-                        {/if}
+
 
                         </a>
 
