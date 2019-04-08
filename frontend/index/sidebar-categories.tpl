@@ -7,9 +7,7 @@
                 <li class="navigation--entry{if $category.flag} is--active{/if}{if $category.subcategories} has--sub-categories{/if}{if $category.childrenCount} has--sub-children{/if}" role="menuitem">
 
                     {if $sCategoryContent.media}
-                            <div class="shapo--category-hero-image">
                               <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
-                            </div>
                     {/if}
 
 
