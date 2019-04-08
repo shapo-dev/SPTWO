@@ -49,11 +49,11 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
     // Create the fieldset which is the container of our field
-    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
+    //$attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
     $fieldset = $this->createFieldSet(
         'social_media_settings',
         'Social Media Links',
-        ['attributes' => $attributes]
+        //['attributes' => $attributes]
 
     );
 
