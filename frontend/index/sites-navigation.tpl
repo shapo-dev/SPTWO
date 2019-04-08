@@ -17,9 +17,9 @@
                            {if $page.target}target="{$page.target}"{/if}>
                            {$page.description}
 
-                            {if $sCategoryContent.media}
+                            {* if $sCategoryContent.media}
                             <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
-                            {/if}
+                            {/if *}
 
                             {if $page.childrenCount}
                                 <span class="is--icon-right">
