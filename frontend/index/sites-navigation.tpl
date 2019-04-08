@@ -20,6 +20,11 @@
                                 <i class="ti ti-angle-right"></i>
                             </span>
                             {/if}
+                        
+                        {if $sCategoryContent.media}
+                                  <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
+                        {/if}
+
                         </a>
 
                         {if $page.active && $page.subPages}

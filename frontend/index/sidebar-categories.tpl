@@ -12,12 +12,6 @@
                         title="{$category.description|escape}"
                         {if $category.external && $category.externalTarget}target="{$category.externalTarget}"{/if}>
                         {$category.description}
-
-                        {if $sCategoryContent.media}
-                                  <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
-                        {/if}
-                    
-
                         {if $category.childrenCount}
                             <span class="is--icon-right">
                                 <i class="ti ti-angle-right"></i>
