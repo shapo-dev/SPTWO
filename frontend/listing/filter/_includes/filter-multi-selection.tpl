@@ -76,10 +76,8 @@
                                                                 {/if}
 
                                                                 <img class="filter-panel--media-image" src="{$mediaFile}" alt="{$option->getLabel()|escape:'htmlall'}" />
-
                                                             {else}
                                                                 {$option->getLabel()|escape}
-                                                                
                                                             {/if}
                                                         </label>
                                                     {/block}
