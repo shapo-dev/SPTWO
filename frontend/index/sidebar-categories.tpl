@@ -18,6 +18,15 @@
                                 <i class="ti ti-angle-right"></i>
                             </span>
                         {/if}
+
+
+                        {if $sCategoryContent.media}
+                            <div class="shapo--category-hero-image">
+                              <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
+                            </div>
+                        {/if}
+
+
                     </a>
                     {block name="frontend_index_categories_left_entry_subcategories"}
                         {if $category.subcategories}

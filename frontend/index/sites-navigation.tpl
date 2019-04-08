@@ -20,14 +20,6 @@
                                 <i class="ti ti-angle-right"></i>
                             </span>
                             {/if}
-                     
-                            {if $sCategoryContent.media}
-                                <div class="shapo--category-hero-image">
-                                  <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
-                                </div>
-                            {/if}
-
-
                         </a>
 
                         {if $page.active && $page.subPages}
