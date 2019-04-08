@@ -4,7 +4,7 @@
         {block name="frontend_index_categories_left_before"}{/block}
         {foreach $categories as $category}
             {block name="frontend_index_categories_left_entry"}
-                <li class="mobi navigation--entry{if $category.flag} is--active{/if}{if $category.subcategories} has--sub-categories{/if}{if $category.childrenCount} has--sub-children{/if}" role="menuitem">
+                <li class="navigation--entry{if $category.flag} is--active{/if}{if $category.subcategories} has--sub-categories{/if}{if $category.childrenCount} has--sub-children{/if}" role="menuitem">
                     <a class="navigation--link{if $category.flag} is--active{/if}{if $category.subcategories} has--sub-categories{/if}{if $category.childrenCount} link--go-forward{/if}"
                         href="{$category.link}"
                         data-categoryId="{$category.id}"
@@ -12,6 +12,11 @@
                         title="{$category.description|escape}"
                         {if $category.external && $category.externalTarget}target="{$category.externalTarget}"{/if}>
                         {$category.description}
+
+                        {if $sCategoryContent.media}
+                                  <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
+                        {/if}
+                    
 
                         {if $category.childrenCount}
                             <span class="is--icon-right">
