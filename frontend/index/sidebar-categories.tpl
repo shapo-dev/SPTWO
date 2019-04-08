@@ -5,6 +5,14 @@
         {foreach $categories as $category}
             {block name="frontend_index_categories_left_entry"}
                 <li class="navigation--entry{if $category.flag} is--active{/if}{if $category.subcategories} has--sub-categories{/if}{if $category.childrenCount} has--sub-children{/if}" role="menuitem">
+
+                    {if $sCategoryContent.media}
+                            <div class="shapo--category-hero-image">
+                              <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
+                            </div>
+                    {/if}
+
+
                     <a class="navigation--link{if $category.flag} is--active{/if}{if $category.subcategories} has--sub-categories{/if}{if $category.childrenCount} link--go-forward{/if}"
                         href="{$category.link}"
                         data-categoryId="{$category.id}"
@@ -18,14 +26,6 @@
                                 <i class="ti ti-angle-right"></i>
                             </span>
                         {/if}
-
-
-                        {if $sCategoryContent.media}
-                            <div class="shapo--category-hero-image">
-                              <img src="{$sCategoryContent.media.path}" alt="{$sCategoryContent.media.description}">
-                            </div>
-                        {/if}
-
 
                     </a>
                     {block name="frontend_index_categories_left_entry_subcategories"}
