@@ -26,8 +26,6 @@ class Theme extends \Shopware\Components\Theme
     protected $injectBeforePlugins =  false;
 
 
-}
-
 
 
 
