@@ -23,7 +23,7 @@ class Theme extends \Shopware\Components\Theme
     protected $license = '__license__';
 
 
-    //protected $injectBeforePlugins =  false;
+    protected $injectBeforePlugins =  false;
 
 
 
