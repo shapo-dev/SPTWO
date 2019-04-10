@@ -198,7 +198,7 @@ class Theme extends \Shopware\Components\Theme
      */
     private $themeFontDefaults = [
         'font-base-stack' => '"DIN PRO", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;',
-        'font-headline-stack' => '@font-base-stack',
+        'font-headline-stack' => '@shapo-headlines',
         'font-size-base' => 14,
         'font-base-weight' => 500,
         'font-light-weight' => 300,
@@ -216,7 +216,21 @@ class Theme extends \Shopware\Components\Theme
         'btn-icon-size' => 10,
     ];
 
+    /**
+     * @param Form\Container\TabContainer $container
+     */
+    public function createConfig(Form\Container\TabContainer $container)
+    {
+        $container->addTab($this->createMainConfigTab());
 
+        $tab = $this->createTab(
+            'shapo_tab',
+            '__shapo_tab__'
+        );
+        $container->addTab($tab);
+
+        $tab->addElement($this->createBottomTabPanel());
+    }
 
 
 
