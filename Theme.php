@@ -406,8 +406,9 @@ public function createConfig(Form\Container\TabContainer $container)
     $fieldset = $this->createFieldSet(
         'top_bar_feat_detail_settings',
         'Top Bar',
-        ['attributes' => $attributes]
-
+        'attributes' => [
+                    'autoScroll' => true,
+                ],
     );
 
     $topbar_active = $this->createCheckboxField(
@@ -415,7 +416,7 @@ public function createConfig(Form\Container\TabContainer $container)
         'Topbar aktiv?',
          true,
         ['attributes' => $attributes]
-       
+
     );
 
 
