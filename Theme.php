@@ -42,7 +42,7 @@ class Theme extends \Shopware\Components\Theme
      *
      * @var string
      */
-    protected $name = '__theme_name__';
+    protected $name = 'SPTWO';
 
     /**
      * Allows to define a description text for the theme.
