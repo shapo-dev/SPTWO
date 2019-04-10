@@ -397,6 +397,10 @@ public function createConfig(Form\Container\TabContainer $container)
     $container->addTab($tab);
 
 
+
+
+
+
     // TOP BAR ICONS + TEXT
     $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
     $fieldset = $this->createFieldSet(
@@ -405,9 +409,6 @@ public function createConfig(Form\Container\TabContainer $container)
         ['attributes' => $attributes]
 
     );
-
-
-
 
     $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
     $topbar_active = $this->createCheckboxField(
@@ -494,7 +495,7 @@ public function createConfig(Form\Container\TabContainer $container)
     ); 
 
     // USP 4
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'url']);
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'url 4']);
     $topbar_feat_link_4 = $this->createTextField(
         'topbar_feat_link_4',
         'Link 4',
@@ -502,7 +503,7 @@ public function createConfig(Form\Container\TabContainer $container)
          ['attributes' => $attributes]
     );
 
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'icon']);
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'icon 4']);
     $topbar_feat_icon_4 = $this->createTextField(
         'topbar_feat_icon_4',
         'ICON 4',
@@ -510,7 +511,7 @@ public function createConfig(Form\Container\TabContainer $container)
          ['attributes' => $attributes]
     );
 
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'USP']);
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'USP 4']);
     $topbar_feat_text_4 = $this->createTextField(
         'topbar_feat_text_4',
         'USP 4',
