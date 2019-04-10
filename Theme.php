@@ -94,3 +94,9 @@ class Theme extends \Shopware\Components\Theme
         // Shopware specific plugins
 
     ];
+
+
+
+
+
+}
