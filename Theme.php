@@ -221,6 +221,23 @@ class Theme extends \Shopware\Components\Theme
      */
     public function createConfig(Form\Container\TabContainer $container)
     {
+
+
+        $checkboxDefaults = [
+            'lessCompatible' => false,
+            'columnWidth' => 0.2,
+            'labelWidth' => 150
+        ];
+
+        $textFieldDefaults = [
+            'lessCompatible' => false,
+            'hideLabel' => false,
+            'layout' => 'column',
+            'columnWidth' => 0.5
+        ];
+
+
+        
         $container->addTab($this->createMainConfigTab());
 
         $tab = $this->createTab(
@@ -235,5 +252,5 @@ class Theme extends \Shopware\Components\Theme
 
 
 
-
+// END
 }
