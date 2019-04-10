@@ -234,7 +234,7 @@ public function createConfig(Form\Container\TabContainer $container)
 
         $textFieldDefaults = [
             'lessCompatible' => false,
-            'hideLabel' => false,
+            'hideLabel' => true,
             'layout' => 'column',
             'columnWidth' => 0.5
         ];
