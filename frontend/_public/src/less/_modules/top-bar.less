@@ -2,43 +2,40 @@
 @media screen and (min-width: @desktopViewportWidth) {
 
 .header-main {
-        .top-bar { display: block; }
-}
 
-
-
-.top-bar {
-  background: @gray-light;
-  .unitize(font-size, 14);
-  a {
-    .unitize(padding, 0);
-    .unitize(line-height, 25);
-    .unitize(margin-right, 0);
-    font-weight: bold;
-    color: @text-color;
-  
-    &:hover {
-      color: @sp-pink;
-    }
-  }
-  i {
-    color: @sp-green;
-    .unitize(margin-right, 5);
-  }
-      .usp--container {
-          width: 100%;
-          text-align: center;
-          align-items: center;
-          display: flex;
-      .usp {
-          padding: 0;
-          margin: 0;
-          align-items: center;
-          text-align: center;
-          width: 25%;
+    .top-bar {
+      background: @gray-light;
+      .unitize(font-size, 14);
+      a {
+        .unitize(padding, 0);
+        .unitize(line-height, 25);
+        .unitize(margin-right, 0);
+        font-weight: bold;
+        color: @text-color;
+      
+        &:hover {
+          color: @sp-pink;
+        }
       }
+      i {
+        color: @sp-green;
+        .unitize(margin-right, 5);
+      }
+          .usp--container {
+              width: 100%;
+              text-align: center;
+              align-items: center;
+              display: flex;
+          .usp {
+              padding: 0;
+              margin: 0;
+              align-items: center;
+              text-align: center;
+              width: 25%;
+          }
+        }
     }
-}
 
+}
 
 }
