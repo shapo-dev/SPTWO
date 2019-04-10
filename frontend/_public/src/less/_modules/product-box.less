@@ -1,5 +1,43 @@
 //  Product box
-.product--box {
-	    .box--content {width: 33%}
+@media screen and(min-width: @desktopViewportWidth) {
 
+    .box--basic {
+        .image--left(170);
+
+        .box--content {
+            .unitize-padding(20, 10);
+        }
+    }
+
+    .box--minimal {
+        width: 33%;
+
+        .buybox--form {
+            .buy-btn--cart-text {
+                display: inline-block;
+            }
+
+            i.icon--basket {
+                display: none;
+            }
+        }
+    }
+
+    .box--image {
+        .image--top(300);
+    }
+
+    .is--ctl-search,
+    .is--ctl-listing.is--no-sidebar {
+
+        .box--minimal {
+            width: 33%;
+        }
+
+        .has--sidebar-filter {
+            .box--basic {
+                .image--left(170);
+            }
+        }
+    }
 }
