@@ -140,7 +140,11 @@
     }
   }
   .product-slider--container.is--horizontal .product-slider--item{
-    width: 33.333% !important;
+
+  	width: 33.3333%;
+	width: calc(100% / 3);
+
+
   }
 }
 @media all and (min-width: @tabletViewportWidth){
@@ -164,7 +168,11 @@
 }
 @media all and (min-width: @tabletLandscapeViewportWidth){
   .box--minimal, .box--slider{
-    width: calc(33.3333%);
+
+  	width: 33.3333%;
+	width: calc(100% / 3);
+
+
     .box--content{
       .product--image{
         .unitize(height, 480);
