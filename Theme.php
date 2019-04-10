@@ -409,7 +409,7 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
 
-    $attributes = array_merge($this->fieldSetDefaults, ['width' => 700]);
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
     $topbar_active = $this->createCheckboxField(
         'topbar_active',
         'Topbar aktiv?',
