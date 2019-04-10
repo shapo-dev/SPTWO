@@ -455,6 +455,24 @@ public function createConfig(Form\Container\TabContainer $container)
         'USP TEXT 3',
         ''
     );
+    // USP 4
+    $topbar_feat_link_4 = $this->createTextField(
+        'topbar_feat_link_4',
+        'Link 4',
+        ''
+    );
+    $topbar_feat_icon_4 = $this->createTextField(
+        'topbar_feat_icon_4',
+        'ICON 4',
+        ''
+    );
+    $topbar_feat_text_4 = $this->createTextField(
+        'topbar_feat_text_4',
+        'USP TEXT 4',
+        ''
+    );
+
+
 
 
     // Adding the fields to the fieldset
@@ -471,6 +489,10 @@ public function createConfig(Form\Container\TabContainer $container)
     $fieldset->addElement($topbar_feat_link_3);
     $fieldset->addElement($topbar_feat_icon_3);
     $fieldset->addElement($topbar_feat_text_3);
+
+    $fieldset->addElement($topbar_feat_link_4);
+    $fieldset->addElement($topbar_feat_icon_4);
+    $fieldset->addElement($topbar_feat_text_4);
 
 
 
