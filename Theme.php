@@ -397,10 +397,13 @@ public function createConfig(Form\Container\TabContainer $container)
     $container->addTab($tab);
 
 
-// TOP BAR ICONS + TEXT
+    // TOP BAR ICONS + TEXT
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
     $fieldset = $this->createFieldSet(
         'top_bar_feat_detail_settings',
-        'Top Bar'
+        'Top Bar',
+        ['attributes' => $attributes]
+        
     );
 
 
