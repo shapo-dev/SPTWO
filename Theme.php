@@ -237,7 +237,7 @@ class Theme extends \Shopware\Components\Theme
         ];
 
 
-        
+
         $container->addTab($this->createMainConfigTab());
 
         $tab = $this->createTab(
@@ -248,6 +248,100 @@ class Theme extends \Shopware\Components\Theme
 
         $tab->addElement($this->createBottomTabPanel());
     }
+
+
+    // Create the fieldset which is the container of our field
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
+    $fieldset = $this->createFieldSet(
+        'social_media_settings',
+        'Social Media Links',
+        ['attributes' => $attributes]
+
+    );
+
+
+    // Create the textfield
+    $social = $this->createCheckboxField(
+        'social_icons',
+        'Social Media Icons',
+        true,
+        ['attributes' => $checkboxDefaults]
+
+    );
+
+    $fieldset->addElement($social);
+
+
+    // SocialMediaFacebook
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaFacebook']);
+    $SocialMediaFacebook = $this->createTextField(
+        'SocialMediaFacebook',
+        'Facebook',
+         null,
+         ['attributes' => $attributes]
+    );
+
+    // SocialMediaTwitter
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaTwitter']);
+    $SocialMediaTwitter = $this->createTextField(
+        'SocialMediaTwitter',
+        'Twitter',
+         null,
+         ['attributes' => $attributes]
+    );
+
+    // SocialMediaInstagram
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaInstagram']);
+    $SocialMediaInstagram = $this->createTextField(
+        'SocialMediaInstagram',
+        'Instagram',
+         null,
+         ['attributes' => $attributes]
+    );
+    // SocialMediaPinterest
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaPinterest']);
+    $SocialMediaPinterest = $this->createTextField(
+        'SocialMediaPinterest',
+        'Pinterest',
+         null,
+         ['attributes' => $attributes]
+    );
+    // SocialMediaGoogleplus
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaGoogleplus']);
+    $SocialMediaGoogleplus = $this->createTextField(
+        'SocialMediaGoogleplus',
+        'Googleplus',
+         null,
+         ['attributes' => $attributes]
+    );
+
+
+
+
+
+    // Adding the fields to the fieldset
+    $fieldset->addElement($SocialMediaFacebook);
+    $fieldset->addElement($SocialMediaTwitter);
+    $fieldset->addElement($SocialMediaInstagram);
+    $fieldset->addElement($SocialMediaPinterest);
+    $fieldset->addElement($SocialMediaGoogleplus);
+
+
+    // Create the tab which will be named "My custom colors"
+    $tab = $this->createTab(
+        'social_media_tab',
+        'Social Media Icons'
+    );
+
+    // ...add the fieldset to the tab
+    $tab->addElement($fieldset);
+
+    // ...last but not least add the tab to the container, which is a tab panel.
+    $container->addTab($tab);
+
+
+
+
 
 
 
