@@ -402,7 +402,7 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
     // TOP BAR ICONS + TEXT
-    $attributes = array_merge($this->fieldSetDefaults, ['autoScroll' => true]);
+    $attributes = array_merge($this->fieldSetDefaults, ['autoScroll' => true, 'height' => 440]);
     $fieldset = $this->createFieldSet(
         'top_bar_feat_detail_settings',
         'Top Bar',
