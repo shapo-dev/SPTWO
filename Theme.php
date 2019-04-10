@@ -402,7 +402,7 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
     // TOP BAR ICONS + TEXT
-    $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
     $fieldset = $this->createFieldSet(
         'top_bar_feat_detail_settings',
         'Top Bar',
@@ -410,7 +410,7 @@ public function createConfig(Form\Container\TabContainer $container)
 
     );
 
-    $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
     $topbar_active = $this->createCheckboxField(
         'topbar_active',
         'Topbar aktiv?',
