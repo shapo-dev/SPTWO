@@ -332,9 +332,12 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
     // FIELD SET -- Newsletter
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
     $fieldset = $this->createFieldSet(
         'newsletter_settings',
-        'Newsletter Einstellungen'
+        'Newsletter Einstellungen',
+        ['attributes' => $attributes]
+        
     );
 
      $newsletter_active = $this->createCheckboxField(
@@ -398,10 +401,15 @@ public function createConfig(Form\Container\TabContainer $container)
         'Top Bar'
     );
 
+
+
+
+
      $topbar_active = $this->createCheckboxField(
         'topbar_active',
         'Topbar aktiv?',
-        false
+         true,
+        ['attributes' => $checkboxDefaults]
     );
 
 
