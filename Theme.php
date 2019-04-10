@@ -414,7 +414,7 @@ public function createConfig(Form\Container\TabContainer $container)
         'topbar_active',
         'Topbar aktiv?',
          true,
-        ['attributes' => $checkboxDefaults]
+        //['attributes' => $checkboxDefaults]
     );
 
 
