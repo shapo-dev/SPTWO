@@ -402,13 +402,12 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
     // TOP BAR ICONS + TEXT
-    $attributes = array_merge($this->fieldSetDefaults, ['height' => 440]);
+    $attributes = array_merge($this->fieldSetDefaults, ['autoScroll' => true]);
     $fieldset = $this->createFieldSet(
         'top_bar_feat_detail_settings',
         'Top Bar',
-        'attributes' => [
-                    'autoScroll' => true,
-                ],
+        ['attributes' => $attributes]
+
     );
 
     $topbar_active = $this->createCheckboxField(
