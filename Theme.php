@@ -403,7 +403,7 @@ public function createConfig(Form\Container\TabContainer $container)
         'top_bar_feat_detail_settings',
         'Top Bar',
         ['attributes' => $attributes]
-        
+
     );
 
 
@@ -418,72 +418,107 @@ public function createConfig(Form\Container\TabContainer $container)
     );
 
 
-    // Detail Feat
+    // USP 1
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'url']);
     $topbar_feat_link_1 = $this->createTextField(
         'topbar_feat_link_1',
         'Link 1',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
+
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'icon']);
     $topbar_feat_icon_1 = $this->createTextField(
         'topbar_feat_icon_1',
         'ICON 1',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
 
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'USP']);
     $topbar_feat_text_1 = $this->createTextField(
         'topbar_feat_text_1',
         'USP 1',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
-    // Detail Feat
+
+    // USP 2
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'url']);
     $topbar_feat_link_2 = $this->createTextField(
         'topbar_feat_link_2',
         'Link 2',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
+
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'icon']);
     $topbar_feat_icon_2 = $this->createTextField(
         'topbar_feat_icon_2',
         'ICON 2',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
 
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'USP']);
     $topbar_feat_text_2 = $this->createTextField(
         'topbar_feat_text_2',
-        'USP TEXT 2',
-        ''
+        'USP 2',
+         null,
+         ['attributes' => $attributes]
     );
-    // Detail Feat
+ 
+     // USP 3
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'url']);
     $topbar_feat_link_3 = $this->createTextField(
         'topbar_feat_link_3',
         'Link 3',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
+
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'icon']);
     $topbar_feat_icon_3 = $this->createTextField(
         'topbar_feat_icon_3',
         'ICON 3',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
+
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'USP']);
     $topbar_feat_text_3 = $this->createTextField(
         'topbar_feat_text_3',
-        'USP TEXT 3',
-        ''
-    );
+        'USP 3',
+         null,
+         ['attributes' => $attributes]
+    ); 
+
     // USP 4
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'url']);
     $topbar_feat_link_4 = $this->createTextField(
         'topbar_feat_link_4',
         'Link 4',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
+
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'icon']);
     $topbar_feat_icon_4 = $this->createTextField(
         'topbar_feat_icon_4',
         'ICON 4',
-        ''
+         null,
+         ['attributes' => $attributes]
     );
+
+    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'USP']);
     $topbar_feat_text_4 = $this->createTextField(
         'topbar_feat_text_4',
-        'USP TEXT 4',
-        ''
+        'USP 4',
+         null,
+         ['attributes' => $attributes]
     );
+
+
 
 
 
