@@ -1,4 +1,27 @@
 <?php
+/**
+ * SHAPO Shopware 5 Theme
+ * Copyright (c) SHAPO GmbH & Co KG
+ *
+ * According to our dual licensing model, this program can be used either
+ * under the terms of the GNU Affero General Public License, version 3,
+ * or under a proprietary license.
+ *
+ * The texts of the GNU Affero General Public License with an additional
+ * permission and of our proprietary license can be found at and
+ * in the LICENSE file you have received along with this program.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * "Shopware" is a registered trademark of shopware AG.
+ * The licensing of the program under the AGPLv3 does not imply a
+ * trademark license. Therefore any rights, title and interest in
+ * our trademarks remain entirely with us.
+ */
+
 namespace Shopware\Themes\SPTWO;
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -7,354 +30,53 @@ use Shopware\Components\Theme\ConfigSet;
 
 class Theme extends \Shopware\Components\Theme
 {
-    /** @var string Defines the parent theme */
+    /**
+     * Defines the extended Theme.
+     *
+     * @var string
+     */
     protected $extend = 'Responsive';
 
-    /** @var string Defines the human readable name */
-    protected $name = 'SPTWO';
+    /**
+     * Defines the human readable theme name which is displayed in the backend.
+     *
+     * @var string
+     */
+    protected $name = '__theme_name__';
 
-    /** @var string Description of the theme */
+    /**
+     * Allows to define a description text for the theme.
+     *
+     * @var string
+     */
     protected $description = '__theme_description__';
 
-    /** @var string The author of the theme */
+    /**
+     * Name of the theme author.
+     *
+     * @var string
+     */
     protected $author = '__author__';
 
-    /** @var string License of the theme */
+    /**
+     * License of the theme source code.
+     *
+     * @var string
+     */
     protected $license = '__license__';
 
-
-    protected $injectBeforePlugins =  false;
-
-
-
-
-/**
- * @param Form\Container\TabContainer $container
- */
-public function createConfig(Form\Container\TabContainer $container)
-{
-
-        $checkboxDefaults = [
-            'lessCompatible' => false,
-            'columnWidth' => 0.2,
-            'labelWidth' => 150
-        ];
-
-        $textFieldDefaults = [
-            'lessCompatible' => false,
-            'hideLabel' => false,
-            'layout' => 'column',
-            'columnWidth' => 0.5
-        ];
-
-
-    // Create the fieldset which is the container of our field
-    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
-    $fieldset = $this->createFieldSet(
-        'social_media_settings',
-        'Social Media Links',
-        ['attributes' => $attributes]
-
-    );
-
-
-    // Create the textfield
-    $social = $this->createCheckboxField(
-        'social_icons',
-        'Social Media Icons',
-        true,
-        ['attributes' => $checkboxDefaults]
-
-    );
-
-    $fieldset->addElement($social);
-
-
-    // SocialMediaFacebook
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaFacebook']);
-    $SocialMediaFacebook = $this->createTextField(
-        'SocialMediaFacebook',
-        'Facebook',
-         null,
-         ['attributes' => $attributes]
-    );
-
-    // SocialMediaTwitter
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaTwitter']);
-    $SocialMediaTwitter = $this->createTextField(
-        'SocialMediaTwitter',
-        'Twitter',
-         null,
-         ['attributes' => $attributes]
-    );
-
-    // SocialMediaInstagram
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaInstagram']);
-    $SocialMediaInstagram = $this->createTextField(
-        'SocialMediaInstagram',
-        'Instagram',
-         null,
-         ['attributes' => $attributes]
-    );
-    // SocialMediaPinterest
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaPinterest']);
-    $SocialMediaPinterest = $this->createTextField(
-        'SocialMediaPinterest',
-        'Pinterest',
-         null,
-         ['attributes' => $attributes]
-    );
-    // SocialMediaGoogleplus
-    $attributes = array_merge($textFieldDefaults, ['emptyText' => 'SocialMediaGoogleplus']);
-    $SocialMediaGoogleplus = $this->createTextField(
-        'SocialMediaGoogleplus',
-        'Googleplus',
-         null,
-         ['attributes' => $attributes]
-    );
-
-
-
-
-
-    // Adding the fields to the fieldset
-    $fieldset->addElement($SocialMediaFacebook);
-    $fieldset->addElement($SocialMediaTwitter);
-    $fieldset->addElement($SocialMediaInstagram);
-    $fieldset->addElement($SocialMediaPinterest);
-    $fieldset->addElement($SocialMediaGoogleplus);
-
-
-    // Create the tab which will be named "My custom colors"
-    $tab = $this->createTab(
-        'social_media_tab',
-        'Social Media Icons'
-    );
-
-    // ...add the fieldset to the tab
-    $tab->addElement($fieldset);
-
-    // ...last but not least add the tab to the container, which is a tab panel.
-    $container->addTab($tab);
-
-
-
-    // FIELD SET -- Newsletter
-    $fieldset = $this->createFieldSet(
-        'newsletter_settings',
-        'Newsletter Einstellungen'
-    );
-
-     $newsletter_active = $this->createCheckboxField(
-        'newsletter_active',
-        'Newsletter aktiv?',
-        false
-    );
-     $newsletter_benefits = $this->createCheckboxField(
-        'newsletter_benefits',
-        'Newsletter Benefits aktiv?',
-        false
-    );
-
-    // Newsletter Content
-    $newsletter_header = $this->createTextField(
-        'newsletter_header',
-        'Newsletter Header',
-        ''
-    );
-    $newsletter_content = $this->createTextField(
-        'newsletter_content',
-        'Newsletter Inhalt',
-        ''
-    );
-    $newsletter_image = $this->createMediaField(
-        'newsletter_image',
-        'Newsletter Bild',
-        ''
-    );
-    $newsletter_value = $this->createTextField(
-        'newsletter_value',
-        'Newsletter Rabatt',
-        ''
-    );
-
-    // Adding the fields to the fieldset
-    $fieldset->addElement($newsletter_active);
-    $fieldset->addElement($newsletter_benefits);
-
-    $fieldset->addElement($newsletter_header);
-    $fieldset->addElement($newsletter_content);
-    $fieldset->addElement($newsletter_value);
-    $fieldset->addElement($newsletter_image);
-
-    // Create the tab which will be named "My custom colors"
-    $tab = $this->createTab(
-        'newsletter_tab',
-        'Newsletter Einstellungen'
-    );
-
-    // ...add the fieldset to the tab
-    $tab->addElement($fieldset);
-
-    // ...last but not least add the tab to the container, which is a tab panel.
-    $container->addTab($tab);
-
-
-// TOP BAR ICONS + TEXT
-    $fieldset = $this->createFieldSet(
-        'top_bar_feat_detail_settings',
-        'Top Bar'
-    );
-
-     $topbar_active = $this->createCheckboxField(
-        'topbar_active',
-        'Topbar aktiv?',
-        false
-    );
-
-
-    // Detail Feat
-    $topbar_feat_link_1 = $this->createTextField(
-        'topbar_feat_link_1',
-        'Link 1',
-        ''
-    );
-    $topbar_feat_icon_1 = $this->createTextField(
-        'topbar_feat_icon_1',
-        'ICON 1',
-        ''
-    );
-
-    $topbar_feat_text_1 = $this->createTextField(
-        'topbar_feat_text_1',
-        'USP 1',
-        ''
-    );
-    // Detail Feat
-    $topbar_feat_link_2 = $this->createTextField(
-        'topbar_feat_link_2',
-        'Link 2',
-        ''
-    );
-    $topbar_feat_icon_2 = $this->createTextField(
-        'topbar_feat_icon_2',
-        'ICON 2',
-        ''
-    );
-
-    $topbar_feat_text_2 = $this->createTextField(
-        'topbar_feat_text_2',
-        'USP TEXT 2',
-        ''
-    );
-    // Detail Feat
-    $topbar_feat_link_3 = $this->createTextField(
-        'topbar_feat_link_3',
-        'Link 3',
-        ''
-    );
-    $topbar_feat_icon_3 = $this->createTextField(
-        'topbar_feat_icon_3',
-        'ICON 3',
-        ''
-    );
-    $topbar_feat_text_3 = $this->createTextField(
-        'topbar_feat_text_3',
-        'USP TEXT 3',
-        ''
-    );
-
-
-    // Adding the fields to the fieldset
-    $fieldset->addElement($topbar_active);
-
-    $fieldset->addElement($topbar_feat_link_1);
-    $fieldset->addElement($topbar_feat_icon_1);
-    $fieldset->addElement($topbar_feat_text_1);
-
-    $fieldset->addElement($topbar_feat_link_2);
-    $fieldset->addElement($topbar_feat_icon_2);
-    $fieldset->addElement($topbar_feat_text_2);
-
-    $fieldset->addElement($topbar_feat_link_3);
-    $fieldset->addElement($topbar_feat_icon_3);
-    $fieldset->addElement($topbar_feat_text_3);
-
-
-
-    // Create the tab which will be named "My custom colors"
-    $tab = $this->createTab(
-        'top_bar_feat_detail_tab',
-        'Topbar (USPs)'
-    );
-
-    // ...add the fieldset to the tab
-    $tab->addElement($fieldset);
-
-    // ...last but not least add the tab to the container, which is a tab panel.
-    $container->addTab($tab);
-
-
-
-
- // FIELD SET -- BANNER ADS
-    $fieldset = $this->createFieldSet(
-        'banner_ads_settings',
-        'Banner Ads'
-    );
-
-     $banner_ads_active = $this->createCheckboxField(
-        'banner_ads_active',
-        'Banner Ads',
-        false
-    );
-
-
-    // Banner ADS Header
-    $banner_ads_header = $this->createTextField(
-        'banner_ads_header',
-        'Banner Header',
-        ''
-    );
-    $banner_ads_link = $this->createTextField(
-        'banner_ads_link',
-        'Banner Link',
-        ''
-    );
-    // Adding the fields to the fieldset
-    $fieldset->addElement($banner_ads_active);
-    $fieldset->addElement($banner_ads_header);
-    $fieldset->addElement($banner_ads_link);
-
-    // Create the tab which will be named "My custom colors"
-    $tab = $this->createTab(
-        'banner_ads_tab',
-        'Banner (Flashsale)'
-    );
-
-    // ...add the fieldset to the tab
-    $tab->addElement($fieldset);
-
-    // ...last but not least add the tab to the container, which is a tab panel.
-    $container->addTab($tab);
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-    /** @var array Defines the files which should be compiled by the javascript compressor */
-    protected $javascript = array(
-        //SHOPWARE 
-
+    /**
+     * @var bool
+     */
+    protected $injectBeforePlugins = true;
+
+    /**
+     * Javascript files which will be used in the theme.
+     *
+     * @var array
+     */
+    protected $javascript = [
+        // Third party plugins / libraries
          'src/js/hover.desable.js',
          'src/js/jquery.top-filter.js',
          'src/js/jquery.search-trigger.js',
@@ -368,52 +90,7 @@ public function createConfig(Form\Container\TabContainer $container)
 
         // SHAPO STUFF
         'src/js/shapo.js',
-        
 
+        // Shopware specific plugins
 
-    );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+    ];
