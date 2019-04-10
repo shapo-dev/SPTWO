@@ -343,12 +343,14 @@ public function createConfig(Form\Container\TabContainer $container)
      $newsletter_active = $this->createCheckboxField(
         'newsletter_active',
         'Newsletter aktiv?',
-        false
+        true,
+        ['attributes' => $checkboxDefaults]
     );
      $newsletter_benefits = $this->createCheckboxField(
         'newsletter_benefits',
         'Newsletter Benefits aktiv?',
-        false
+        false,
+        ['attributes' => $checkboxDefaults]
     );
 
     // Newsletter Content
