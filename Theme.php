@@ -96,6 +96,21 @@ class Theme extends \Shopware\Components\Theme
     ];
 
 
+    /**
+     * Holds default fieldSet configuration.
+     *
+     * @var array
+     */
+    private $fieldSetDefaults = [
+        'layout' => 'column',
+        'height' => 170,
+        'flex' => 0,
+        'defaults' => ['columnWidth' => 0.5, 'labelWidth' => 180, 'margin' => '3 16 3 0'],
+    ];
+
+
+
+
 
 
 
