@@ -236,7 +236,7 @@ public function createConfig(Form\Container\TabContainer $container)
             'lessCompatible' => false,
             'hideLabel' => false,
             'layout' => 'column',
-            'columnWidth' => 0.3
+            'columnWidth' => 0.5
         ];
 
 
