@@ -332,12 +332,12 @@ public function createConfig(Form\Container\TabContainer $container)
 
 
     // FIELD SET -- Newsletter
-    $attributes = array_merge($this->fieldSetDefaults, ['height' => 220]);
+    $attributes = array_merge($this->fieldSetDefaults, ['height' => 420]);
     $fieldset = $this->createFieldSet(
         'newsletter_settings',
         'Newsletter Einstellungen',
         ['attributes' => $attributes]
-        
+
     );
 
      $newsletter_active = $this->createCheckboxField(
