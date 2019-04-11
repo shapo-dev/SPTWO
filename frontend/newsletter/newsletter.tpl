@@ -13,10 +13,12 @@
 			</div>
 
 			<div class="newsletter--footer-content-container">
+            {if $theme.newsletter_header !== ""}
             <div class="newsletter--footer-headline">
             	<h2 class="newsletter--title">{$theme.newsletter_header}</h2>
             	{if $theme.newsletter_content !== ""}<p>{$theme.newsletter_content}</p>{/if}
             </div>
+            {/if}
 
 			{if $theme.newsletter_benefits !== false}
             <div class="newsletter--footer-benefits">
