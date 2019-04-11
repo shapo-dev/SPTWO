@@ -2,10 +2,15 @@
 
 {block name="frontend_detail_index_configurator"}
     {$smarty.block.parent}
+    <div class="product--delivery">
+
     {if $sArticle.instock < 3}
-    <p class="yellow" style="color: yellow">Nur noch <b>{$sArticle.instock} X</b> in Deiner Größe verfügbar</p>
+    <i class="delivery--status-icon delivery--status-more-is-coming"></i>
+    <p class="delivery--information">Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar</p>
     {/if}
     {if $sArticle.instock < 2}
-    <p class="red" style="color: red">Nur noch <b>{$sArticle.instock} X</b> in Deiner Größe verfügbar</p>
+    <i class="delivery--status-icon delivery--status-not-available"></i>
+    <p class="delivery--information">Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar</p>
     {/if}
+	</div>
 {/block}    
