@@ -4,7 +4,7 @@
     {$smarty.block.parent}
     <div class="product--delivery">
 
-    {if $sArticle.instock <= 3}
+    {if $sArticle.instock <= 3 && <= 2}
 	<p class="delivery--information">
 	<span class="delivery--text delivery--text-more-is-coming">
 	<i class="delivery--status-icon delivery--status-more-is-coming"></i>
