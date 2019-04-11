@@ -1,7 +1,10 @@
 #newsletter--footer {
 	background: @sp-green;
-    .unitize-padding(15, 0);
+    .unitize-padding(0, 0);
     color: @text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 #newsletter--footer .container {
 	background:transparent;
@@ -21,4 +24,19 @@ h2.newsletter--title {
     color: @sp-green-dark;
 }
 
+
+
+@media screen and (min-width: @desktopViewportWidth) {
+
+    .newsletter--footer-img-container {
+        width: 33%;
+        height: 100%;
+        background-size: cover;
+        float: left;
+        background-position: left center;
+        min-height: 240px;
+        background-repeat: no-repeat;
+    }
+
+}
 
