@@ -49,7 +49,6 @@
             {$smarty.block.parent}
         {/if}
         {include file="frontend/register/steps.tpl" sStepActive="address"}
-        {include file="frontend/checkout/cart.tpl"}
     {/if}
 {/block}
 
