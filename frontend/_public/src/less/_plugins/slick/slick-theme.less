@@ -175,10 +175,17 @@ body.is--ctl-index.is--act-index .detail--usp-content {
     display: none;
 }
 
+.detail--usp-content {
+    background-color: @gray-light;
+    .unitize(padding, 15);
+    text-align: center;
+}
+
+
+
 @media screen and (max-width: @tabletViewportWidth) {
     body.is--ctl-index.is--act-index .detail--usp-content {
     display: block;
-    background-color: @gray-light;
 
     .usp--panels {
 
@@ -197,3 +204,8 @@ body.is--ctl-index.is--act-index .detail--usp-content {
 
     }    
 }
+
+
+
+
+
