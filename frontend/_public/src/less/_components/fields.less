@@ -6,13 +6,13 @@ input[type="number"],
 input[type="email"],
 input[type="tel"] {
     .appearance(none);
-    .border-radius();
+    .reset-border-radius();
     .box-sizing();
     .unitize(line-height, 19);
     .unitize(@input-font-size, 16, font-size);
     .unitize-width(290);
     .unitize-padding(10, 10, 9, 10);
-    .box-shadow();
+    .box-shadow(none);
     background: transparent;
     border: 1px solid @input-border;
     border-top-color: darken(@input-border, 5%);
