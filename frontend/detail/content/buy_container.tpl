@@ -2,6 +2,6 @@
 
 {block name="frontend_detail_index_configurator"}
     {$smarty.block.parent}
-    Lagerbestand: {$sArticle.instock}</p>
+    <p>Nur noch <b>{$sArticle.instock}</b> in Deiner Größe verfügbar</p>
 
 {/block}    
