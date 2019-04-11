@@ -5,13 +5,6 @@
     align-items: center;
     justify-content: center;    
 }
-#newsletter--footer .container {
-	background:transparent;
-    .unitize-padding(0, 15);
-}
-h2.newsletter--title {
-    .unitize(font-size , 24);
-}
 
 .newsletter--footer-benefits span {
     .unitize(font-size , 16);
@@ -22,7 +15,16 @@ h2.newsletter--title {
     .unitize(font-size , 16);
     color: @sp-green-dark;
 }
+h2.newsletter--title {
+    .unitize(font-size , 24);
+}
 
+
+@media screen and (max-width: @tabletLandscapeViewportWidth) {
+    #newsletter--footer {
+    .unitize-padding(15, 0);
+    }
+}
 
 @media screen and (min-width: @desktopViewportWidth) {
     .newsletter--footer-content-container {
@@ -41,9 +43,5 @@ h2.newsletter--title {
 
 }
 
-@media screen and (min-width: @phoneLandscapeViewportWidth) {
-    #newsletter--footer {
-    .unitize-padding(15, 0);
-    }
-}
+
 
