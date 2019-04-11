@@ -1,20 +1,25 @@
-.advanced-menu .button-container {
-    display: none;
+// ADVANCED MENU
+.advanced-menu {
+    .button-container {
+        display: none;
+    } 
+    .menu--level-1 {
+        .unitize(margin 0);
+    }
+
 }
 
-.advanced-menu .menu--level-1 {
-    .unitize(margin 0);
-}
 
 
+
+// MAIN NAV
 .navigation-main .navigation--list .navigation--entry.is--hovered {
-    .border-radius-multi(0px, 0px);
-    .tap-highlight-color(rgba(0, 0, 0, 0));
+    .reset-border-radius();
     background: transparent;
     color: @text-color;
 
-	    .navigation--link {
+	.navigation--link {
 	        background: transparent;
 	        color: @text-color;
-	    }
+	}
 }
