@@ -197,7 +197,7 @@ class Theme extends \Shopware\Components\Theme
      * @var array
      */
     private $themeFontDefaults = [
-        'font-base-stack' => '"DIN PRO", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;',
+        'font-base-stack' => '@shapo-base',
         'font-headline-stack' => '@shapo-headlines',
         'font-size-base' => 14,
         'font-base-weight' => 500,
