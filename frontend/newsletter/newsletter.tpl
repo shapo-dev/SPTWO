@@ -36,16 +36,7 @@
 			</button>
 			</div>
 		   	
-			<div class="newsletter--cookies">
-		
-                            {* Data protection information *}
-                            {block name="frontend_newsletter_form_privacy"}
-                                {if {config name=ACTDPRTEXT} || {config name=ACTDPRCHECK}}
-                                    {include file="frontend/_includes/privacy.tpl"}
-                                {/if}
-                            {/block}
 
-			</div>
 
 
 			</div>
