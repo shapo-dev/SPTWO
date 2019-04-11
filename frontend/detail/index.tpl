@@ -18,7 +18,6 @@
                 <span class="entry--content">
                     <a class="btn " data-content="" data-modalbox="true" data-targetselector="a" data-mode="ajax" href="/groessentabelle">
                         <i class="ti ti-ruler"></i> {s name="SizeChartLink" namespace="frontend/detail/data"}{/s}</a>
-                         Lagerbestand: {$sArticle.instock}</p>
                 </span>
             {/block}
         </li>
@@ -30,3 +29,5 @@
 
 
 {/block}
+
+
