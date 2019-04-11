@@ -2,6 +2,7 @@
 .btn,a {
     .reset-border-radius();
     .transition();
+    background-image: none;
 
     &:hover {
         color: @link-hover-color;
@@ -17,11 +18,11 @@
 
 
 /* Checkout Button + Add to Cart */ 
-.button--checkout,button.buybox--button {
+.button--checkout,.buybox--button {
     background: @sp-green;
     color: #fff;
-}
-.button--checkout:hover,button.buybox--button:hover {
+
+    &:hover {
     background: @sp-green-dark;
     color: #fff;    
 }
