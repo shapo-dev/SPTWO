@@ -19,10 +19,13 @@
     <li class="navigation--entry entry--account{if {config name=useSltCookie} || $sOneTimeAccount} with-slt{/if}"
         role="menuitem"
         data-offcanvas="true"
-        data-offCanvasSelector=".account--dropdown-navigation">
+        data-offCanvasSelector=".account--dropdown-navigation"
+        data-content="" 
+        data-modalbox="true" 
+        data-targetselector="a" 
+        data-mode="ajax">
         {block name="frontend_index_checkout_actions_account"}
-            <a data-content="" data-modalbox="true" data-targetselector="a" data-mode="ajax"
-            href="{url controller='account'}"
+            <a href="{url controller='account'}"
                title="{"{if $userInfo}{s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}{$userInfo['firstname']}{s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s} - {/if}{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}"|escape}"
                class="btn is--icon-left entry--link account--link{if $userInfo} account--user-loggedin{/if}">
                <i class="ti ti-user"></i>
