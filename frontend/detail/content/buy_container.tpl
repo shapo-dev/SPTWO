@@ -5,12 +5,22 @@
     <div class="product--delivery">
 
     {if $sArticle.instock < 3}
-    <i class="delivery--status-icon delivery--status-more-is-coming"></i>
-    <p class="delivery--information">Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar</p>
+	<p class="delivery--information">
+	<span class="delivery--text delivery--text-more-is-coming">
+	<i class="delivery--status-icon delivery--status-more-is-coming"></i>
+	Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar
+	</span>
+	</p>
     {/if}
+
     {if $sArticle.instock < 2}
-    <i class="delivery--status-icon delivery--status-not-available"></i>
-    <p class="delivery--information">Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar</p>
+	<p class="delivery--information">
+	<span class="delivery--text delivery--text-not-available">
+	<i class="delivery--status-icon delivery--status-not-available"></i>
+	Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar
+	</span>
+	</p>
     {/if}
-	</div>
+    
+
 {/block}    
