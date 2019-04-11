@@ -11,9 +11,7 @@
 	Nur noch <b>{$sArticle.instock}X</b> in Deiner Größe verfügbar
 	</span>
 	</p>
-    {/if}
-
-    {if $sArticle.instock < 2}
+    {else}
 	<p class="delivery--information">
 	<span class="delivery--text delivery--text-not-available">
 	<i class="delivery--status-icon delivery--status-not-available"></i>
