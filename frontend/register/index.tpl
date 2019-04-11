@@ -84,7 +84,7 @@
 {* Register content *}
 {block name='frontend_index_content'}
     {block name='frontend_register_index_registration'}
-        <div class="register--content panel content block has--border is--rounded{if $errors.occurred} {/if}" id="registration" data-register="true">
+        <div class="register--content panel content block has--border is--rounded{if $errors.occurred} is--collapsed{/if}" id="registration" data-register="true">
 
             {block name='frontend_register_index_dealer_register'}
                 {* Included for compatibility reasons *}
@@ -238,7 +238,7 @@
                         </li>
                     {/block}
 
-                    {block name='frontend_index_content_advantages_entry2'}
+                    {* block name='frontend_index_content_advantages_entry2'}
                         <li class="register--advantages-entry">
                             {s name='RegisterInfoAdvantagesEntry2'}{/s}
                         </li>
@@ -254,7 +254,7 @@
                         <li class="register--advantages-entry">
                             {s name='RegisterInfoAdvantagesEntry4'}{/s}
                         </li>
-                    {/block}
+                    {/block *}
                 </ul>
             {/block}
         </div>
