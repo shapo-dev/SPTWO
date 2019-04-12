@@ -20,15 +20,18 @@
 
 }
 
-@media screen and (max-width: @tabletLandscapeViewportWidth) {
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
     #newsletter--footer {
     .unitize-padding(15, 0);
     }
 }
 
+
+
 @media screen and (min-width: @desktopViewportWidth) {
     #newsletter--footer {
-        padding-top: 40px;
+    .unitize-padding(15, 0, 0, 0);
+
     }    
 
     .newsletter--footer-img-container {
@@ -42,6 +45,7 @@
     }
 
 }
+
 
 
 
