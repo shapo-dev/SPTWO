@@ -190,7 +190,7 @@ It contains the product actions, the product information such as pictures and de
 
 }
 
-@media screen and (min-width: tabletLandscapeViewportWidth){
+@media screen and (min-width: @tabletLandscapeViewportWidth){
   .product--details {
     .product--image-container{
       width: 58%;
@@ -200,6 +200,17 @@ It contains the product actions, the product information such as pictures and de
        width: 40%;
      }
   }
+
+  .product--detail-upper {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+
+
+
 }
 
 // @media screen and (min-width: @desktopViewportWidth){
