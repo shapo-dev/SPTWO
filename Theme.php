@@ -68,7 +68,7 @@ class Theme extends \Shopware\Components\Theme
     /**
      * @var bool
      */
-    protected $injectBeforePlugins = true;
+    protected $injectBeforePlugins = false;
 
     /**
      * Javascript files which will be used in the theme.
