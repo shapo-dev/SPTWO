@@ -1,4 +1,6 @@
-// GLOBAL
+// GLOBAL NEWSLETTER STYLES
+
+
 #newsletter--footer {
     background: @sp-green;
     color: @text-color;
@@ -19,68 +21,25 @@
         .unitize(font-size , 24);
     }
 
-}
 
-.newsletter--main-content {
-    display: flex;
-
-    input {
-        background-color: #fff;
-        border: none;
-    }
-
-    .btn {
-        border: none;
-        background: #fff;
-        font-size: 22px;
-        line-height: 1;
+    .newsletter--main-content {
         display: flex;
+
+        input {
+            background-color: #fff;
+            border: none;
+        }
+
+        .btn {
+            border: none;
+            background: #fff;
+            font-size: 22px;
+            line-height: 1;
+            display: flex;
+        }
+
     }
 
-}
 
-
-
-
-
-@media screen and (min-width: @phoneLandscapeViewportWidth) {
-    #newsletter--footer {
-    .unitize-padding(15, 15, 15, 15);
-    }    
-
-    .newsletter--footer-img-container {
-        width: 33%;
-        height: 100%;
-        background-size: cover;
-        float: left;
-        background-position: left center;
-        min-height: 240px;
-        background-repeat: no-repeat;
-    }
 
 }
-
-
-
-
-
-
-@media screen and (min-width: @desktopViewportWidth) {
-    #newsletter--footer {
-    .unitize-padding(15, 0, 0, 0);
-
-    }    
-
-    .newsletter--footer-img-container {
-        width: 33%;
-        height: 100%;
-        background-size: cover;
-        float: left;
-        background-position: left center;
-        min-height: 240px;
-        background-repeat: no-repeat;
-    }
-
-}
-
-
