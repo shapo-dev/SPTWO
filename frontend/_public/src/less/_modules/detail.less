@@ -155,6 +155,9 @@ It contains the product actions, the product information such as pictures and de
 }
 
 }
+
+
+
 @media screen and (min-width: @tabletViewportWidth){
   .product--details {
     .product--header{
@@ -163,22 +166,29 @@ It contains the product actions, the product information such as pictures and de
       min-height: auto;
     }
     .product--image-container{
-      width: 65%;
+      width: 80%;
       margin-right: 0;
       float: left;
-      padding-right: 10%;
+      padding-right: 0;
     }
     .product--buybox {
-      width: 30%;
+      width: 25%;
       align-self: flex-start;
+      padding-left: 15px;
     }
+ 
+
+    .image-slider--item {width: 50%}
+
+
     .image-slider--dots {
-     .unitize(margin-top, -30);
-
-
+     .unitize(margin-top, -45);
     }
 
   }
+
+
+
   .product--detail-upper{
     .unitize(padding, 10);
   }
@@ -192,9 +202,15 @@ It contains the product actions, the product information such as pictures and de
       }
     }
   }
-
-
 }
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: @tabletLandscapeViewportWidth){
   .product--details {
