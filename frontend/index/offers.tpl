@@ -10,8 +10,7 @@
 	<div id="clock"></div>
 
 	<h2>{$theme.banner_ads_header}</h2>
-	<h3>{$theme.banner_ads_header}</h3>
-	<h4>{$theme.banner_ads_header}</h4>
+	<span class="falsh--sale-content"></span>
 
 	<span class="small"></span>
 	</a>
