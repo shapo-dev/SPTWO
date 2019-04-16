@@ -1,6 +1,7 @@
 {if $theme.newsletter_active !== false}
 
 {block name='frontend_footer_newsletter'}		
+
 <section id="newsletter--footer">
 <div class="container">	
 
@@ -9,8 +10,7 @@
 		    <input type="hidden" value="1" name="subscribeToNewsletter" />
 		    <input type="hidden" value="ms" name="salutation" />
 
-		    <div class="newsletter--footer-img-container" style="background-image: url({$theme.newsletter_image});">
-			</div>
+		    <div class="newsletter--footer-img-container" style="background-image: url({$theme.newsletter_image});">			</div>
 
 			<div class="newsletter--footer-content-container">
             {if $theme.newsletter_header !== ""}
@@ -37,11 +37,7 @@
 		    <span class="button--text"><i class="ti ti-email"></i>{s name='IndexFooterNewsletterSubmit'}{/s}</span>
 			</button>
 			</div>
-		   	
-
-
-
-			</div>
+		   	</div>
 		
 		</form>
 	</div>
