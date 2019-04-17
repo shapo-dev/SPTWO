@@ -32,7 +32,7 @@ console.info('SHAPO DEV BRANCH')
         // Show clock
         $clock.show();
 
-        var $d = $('<div class="days" ><span></span></div>').appendTo($clock),
+        var $d = $('<div class="days" ><div class="text"><span></span></div></div>').appendTo($clock),
             $h = $('<div class="hours" ><span></span></div>').appendTo($clock),
             $m = $('<div class="minutes" ><span></span></div>').appendTo($clock),
             $s = $('<div class="seconds" ><span></span></div>').appendTo($clock);
