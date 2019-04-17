@@ -12,6 +12,8 @@ var lang = $('html').attr('lang');
 var langcode = [];
 console.log("LANGUAGE: " +  lang);
 
+// MASTER
+
 
 
  // OFFERS TIMER
