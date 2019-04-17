@@ -51,7 +51,7 @@ console.info('SHAPO DEV BRANCH')
             s = $.trim(s).length === 1 ? '0' + s : s;
 
             // show how many hours, minutes and seconds are left
-            $d.text(d + " <span class='text'> Tage ");
+            $d.text(d + 'Tage');
             $h.text(h + ' Std.');
             $m.text(m + ' Min.');
             $s.text(s + ' Sek.');
