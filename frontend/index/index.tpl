@@ -1,11 +1,15 @@
 {extends file="parent:frontend/index/index.tpl"}
 
-
-{block name='frontend_index_content_wrapper'}
+{block name='frontend_index_top_bar_container'}
 {* Flashsale *}	
 {if {controllerName|lower} eq 'index' && $theme.ads_active !== false}
 {include file="frontend/index/offers.tpl"}
 {/if}
+{$smarty.block.parent}    
+{/block}
+
+
+{block name='frontend_index_content_wrapper'}
 {$smarty.block.parent}    
 
 {if {controllerName|lower} eq 'index' && $theme.topbar_active !== false}
