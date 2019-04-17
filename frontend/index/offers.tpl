@@ -6,7 +6,8 @@
 	
 	<span class="falsh--sale-content">
 	<a id="offers" href="{$theme.banner_ads_link}"> 
-	<h2 class="falsh--sale-header">{$theme.banner_ads_header} {namespace name="frontend/offers/offers_content"} </h2>
+	<h2 class="falsh--sale-header">{$theme.banner_ads_header} {s name="frontend/index/offers/offers_content"}{/s}
+ </h2>
 	</a>
 	</span>
 	
