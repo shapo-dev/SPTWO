@@ -7,12 +7,14 @@
 	
 	<a id="offers" href="{$theme.banner_ads_link}"> 
 
-	<div id="clock"></div>
 
-	<h2>{$theme.banner_ads_header}</h2>
+	<h2 class="falsh--sale-header">{$theme.banner_ads_header}</h2>
 	<span class="falsh--sale-content"></span>
 
-	<span class="small"></span>
+
+	<div id="clock"></div>
+
+
 	</a>
 	</div>
 </section>	
