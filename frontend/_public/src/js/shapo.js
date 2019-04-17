@@ -11,6 +11,7 @@
 var lang = $('html').attr('lang');
 var langcode = [];
 console.log("LANGUAGE: " +  lang);
+console.info('SHAPO DEV BRANCH')
 
 // MASTER
 
