@@ -1,7 +1,7 @@
 {if $theme.banner_ads_active == true}
 <!-- OFFERS -->
 {block name='index_flash_sales'}
-<section class="falsh--sale">
+<section class="flash--sale">
 	<div class="container sale--offer">
 	
 	<span class="falsh--sale-content">
