@@ -20,7 +20,7 @@ console.info('SHAPO DEV BRANCH')
 
  // OFFERS TIMER
     var $clock = $('#clock'),
-        eventTime = moment('22-04-2019 23:59:59', 'DD-MM-YYYY HH:mm:ss').unix(),
+        eventTime = moment('23-04-2019 23:59:59', 'DD-MM-YYYY HH:mm:ss').unix(),
         currentTime = moment().unix(),
         diffTime = eventTime - currentTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
@@ -51,7 +51,7 @@ console.info('SHAPO DEV BRANCH')
             s = $.trim(s).length === 1 ? '0' + s : s;
 
             // show how many hours, minutes and seconds are left
-            $d.text(d + ' Tage');
+            $d.text(d + " <span class='text'> Tage ");
             $h.text(h + ' Std.');
             $m.text(m + ' Min.');
             $s.text(s + ' Sek.');
