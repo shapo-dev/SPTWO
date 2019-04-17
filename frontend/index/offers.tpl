@@ -7,9 +7,12 @@
 	<h2 class="falsh--sale-header">{$theme.banner_ads_header}</h2>
 	<span class="falsh--sale-content"></span>
 	</a>
-	</div>
 
 	<div id="clock"></div>
+	
+	</div>
+
+
 </section>	
 {/block}
 <!-- /OFFERS -->
