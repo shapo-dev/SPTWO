@@ -2,7 +2,7 @@
 
 {block name='frontend_index_top_bar_container'}
 {* Flashsale *}	
-{if {controllerName|lower} eq 'index' && $theme.ads_active !== false}
+{if $theme.ads_active !== false}
 {include file="frontend/index/offers.tpl"}
 {/if}
 {$smarty.block.parent}    
