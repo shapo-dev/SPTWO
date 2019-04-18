@@ -4,14 +4,17 @@ textarea.user-comment--field,
 	.is--hidden();
 }
 
-.is--minimal-header {
-	.logo--link picture {
-      .unitize(height, 40);
-      .unitize(width, 125);
-      .unitize(margin-top, -15);
-	}
-  	a.btn.is--small.btn--back-top-shop.is--icon-left {
-      .unitize(margin-top, 5);
-	}
 
+@media screen and(max-width: @desktopViewportWidth) {
+	.is--minimal-header {
+		.logo--link picture {
+	      .unitize(height, 40);
+	      .unitize(width, 125);
+	      .unitize(margin-top, -15);
+		}
+	  	a.btn.is--small.btn--back-top-shop.is--icon-left {
+	      .unitize(margin-top, 5);
+		}
+
+	}
 }
