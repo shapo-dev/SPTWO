@@ -27,6 +27,8 @@
                <i class="ti ti-user"></i>
 
                 <span class="account--social-profile">
+                                {$suser_attributes.facebook_identity|escape}
+
                 
                 </span>
 
