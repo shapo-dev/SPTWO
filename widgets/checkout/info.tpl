@@ -27,7 +27,7 @@
                <i class="ti ti-user"></i>
                 {if $userInfo}
                 
-                <span class="account--social-profile"><img src="https://www.facebook.com/photo.php?fbid=10207921820802647"></span>
+                <span class="account--social-profile"><img src="{$user-id}/picture"></span>
 
                     <span class="account--display navigation--personalized">
                         <span class="account--display-greeting">
