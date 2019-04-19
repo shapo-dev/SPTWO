@@ -25,9 +25,12 @@
                title="{"{if $userInfo}{s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}{$userInfo['firstname']}{s name="AccountGreetingAfter" namespace="frontend/account/sidebar"}{/s} - {/if}{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}"|escape}"
                class="btn is--icon-left entry--link account--link{if $userInfo} account--user-loggedin{/if}">
                <i class="ti ti-user"></i>
+
+                <span class="account--social-profile">{$s_user_attributes|@print_r}<img src="" alt="{$s_user_attributes.facebook_identity}"></span>
+
+
                 {if $userInfo}
                 
-                <span class="account--social-profile">{$s_user_attributes|@print_r}<img src="" alt="{$s_user_attributes.facebook_identity}"></span>
 
                     <span class="account--display navigation--personalized">
                         <span class="account--display-greeting">
