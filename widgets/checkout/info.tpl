@@ -26,7 +26,9 @@
                class="btn is--icon-left entry--link account--link{if $userInfo} account--user-loggedin{/if}">
                <i class="ti ti-user"></i>
 
-                <span class="account--social-profile"><img src="https://graph.facebook.com/{$s_user_attributes.facebook_identity}/picture?type=large" alt="{$s_user_attributes.facebook_identity}"></span>
+                <span class="account--social-profile">
+                
+                </span>
 
 
                 {if $userInfo}
