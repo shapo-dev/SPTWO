@@ -26,13 +26,6 @@
                class="btn is--icon-left entry--link account--link{if $userInfo} account--user-loggedin{/if}">
                <i class="ti ti-user"></i>
 
-                <span class="account--social-profile">
-                                {$suser_attributes.facebook_identity|escape}
-
-                
-                </span>
-
-
                 {if $userInfo}
                 
 
