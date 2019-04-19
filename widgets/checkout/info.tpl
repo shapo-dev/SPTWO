@@ -28,7 +28,7 @@
                 {if $userInfo}
                 
                 {if $isSocialRegistered eq 1}
-                <span class="account--social-profile"><img src="https://www.facebook.com/photo.php?fbid={$id}"></span>
+                <span class="account--social-profile"><img src="https://www.facebook.com/photo.php?fbid=10207921820802647"></span>
                 {/if}                    
 
                     <span class="account--display navigation--personalized">
