@@ -26,7 +26,11 @@
                class="btn is--icon-left entry--link account--link{if $userInfo} account--user-loggedin{/if}">
                <i class="ti ti-user"></i>
                 {if $userInfo}
-                <span class="account--social-profile"><img src="https://www.facebook.com/photo.php?fbid=$userInfo['id']" alt="{$userInfo['firstname']}"></span>
+                
+                {if $isSocialRegistered eq 1}
+                <span class="account--social-profile"><img src="https://www.facebook.com/photo.php?fbid={$isSocialRegistered['id']" alt="{$userInfo['firstname']}"></span>
+                {/if}                    
+
                     <span class="account--display navigation--personalized">
                         <span class="account--display-greeting">
                             {s name="AccountGreetingBefore" namespace="frontend/account/sidebar"}{/s}
