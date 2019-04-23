@@ -53,17 +53,23 @@ section.most-wanted span {
     bottom: 20%;
     width: 100%;
     .unitize(max-width, 1440);
+    .transition();
     
-   span {color: @brand-primary;} 
-   h2 {color: @brand-primary;} 
+   span {
+    color: @brand-primary;
+    .unitize(font-size, 18);
+} 
+   h2 {
+    color: @brand-primary;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 0 1% 0;            
+} 
 
     &:hover {
           span,
           h2 {
                 color:#FFFFFF;
-                text-transform: uppercase;
-                line-height: 1;
-                margin: 0 0 1% 0;            
         }
     } 
 
