@@ -71,22 +71,20 @@
                                                      {if $srcSet}sizes="{$itemSize}" srcset="{$srcSet}"{/if}
                                                      {if $banner.altText}alt="{$banner.altText|escape}" {/if}/>
                                             {/block}
+                                        </div>
+                                    {/block}
 
-                                            {block name="frontend_widgets_banner_slider_banner_caption"}
+                                    {if $banner.link}
+                                        {block name="frontend_widgets_banner_slider_link"}
+
+                                       {block name="frontend_widgets_banner_slider_banner_caption"}
                                             <div class="banner-slider--caption">
                                             {if $banner.altText}<span>{$banner.altText}</span>{/if}
                                             {if $banner.title}<h2>{$banner.title}</h2>{/if}
                                             {if $banner.link} <a class="btn is--primary is--large" href="{$banner.link}" title="{$banner.title|escape}">Mehr erfahren</a>{/if}    
                                             </div>
                                             {/block}
-                                        </div>
-                                    {/block}
 
-                                    {if $banner.link}
-                                        {block name="frontend_widgets_banner_slider_link"}
-                                            <a class="banner-slider--link" href="{$banner.link}" title="{$banner.title|escape}">
-                                                {$banner.altText}
-                                            </a>
                                         {/block}
                                     {/if}
                                 </div>
