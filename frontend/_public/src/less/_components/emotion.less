@@ -53,58 +53,18 @@ section.most-wanted span {
     bottom: 20%;
     width: 100%;
     .unitize(max-width, 1440);
+    
+   .banner-slider--caption span {color: @brand-primary;} 
+   .banner-slider--caption h2 {color: @brand-primary;} 
 
     &:hover {
        .banner-slider--caption span,
        .banner-slider--caption h2 {
             color:#FFFFFF;
-       } 
-    }
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0 0 1% 0;            
+    } 
 
 }
 
-
-
-@media screen and (min-width: @phoneLandscapeViewportWidth){
-
-    .banner-slider--caption span {
-        color: @brand-primary;
-        .unitize(font-size, 18);
-        line-height: 1;
-    }
-    .banner-slider--caption h2 {
-        color: @brand-primary;
-        .unitize(font-size, 42);
-        text-transform: uppercase;
-        line-height: 1;
-        margin: 0 0 1% 0;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: @desktopViewportWidth){
-.banner-slider--caption span {
-    color: @brand-primary;
-    .unitize(font-size, 18);
-    line-height: 1;
-}
-.banner-slider--caption h2 {
-    color: @brand-primary;
-    .unitize(font-size, 72);
-    text-transform: uppercase;
-    line-height: 1;
-    margin: 0 0 1% 0;
-}
-
-}
