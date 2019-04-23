@@ -78,7 +78,7 @@
                                         {block name="frontend_widgets_banner_slider_link"}
 
                                        {block name="frontend_widgets_banner_slider_banner_caption"}
-                                            <div class="banner-slider--caption animated infinite bounce delay-2s">
+                                            <div class="banner-slider--caption animated bounce delay-1s">
                                                 {if $banner.link}
                                                 <a href="{$banner.link}" title="{$banner.title|escape}">
                                                 {if $banner.altText}<span>{$banner.altText}</span>{/if}
