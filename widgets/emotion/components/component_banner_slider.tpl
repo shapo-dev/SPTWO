@@ -81,7 +81,7 @@
                                             <div class="banner-slider--caption">
                                             {if $banner.altText}<span>{$banner.altText}</span>{/if}
                                             {if $banner.title}<h2>{$banner.title}</h2>{/if}
-                                            {if $banner.link} <a class="btn is--primary is--large" href="{$banner.link}" title="{$banner.title|escape}">Mehr erfahren</a>{/if}    
+                                            {if $banner.link} <a class="btn is--primary is--large" href="{$banner.link}" title="{$banner.title|escape}">{s name="shopNow"}Shop Now{/s}</a>{/if}    
                                             </div>
                                             {/block}
 
