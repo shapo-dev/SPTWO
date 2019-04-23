@@ -73,7 +73,10 @@
                                             {/block}
 
                                             {block name="frontend_widgets_banner_slider_banner_caption"}
-                                            caption
+                                            <div class="banner-slider--caption">
+                                            {if $banner.altText}<span>{$banner.altText}</span>{/if}
+                                            {if $banner.title}<h2>{$banner.title}</h2>{/if}    
+                                            </div>
                                             {/block}
                                         </div>
                                     {/block}
