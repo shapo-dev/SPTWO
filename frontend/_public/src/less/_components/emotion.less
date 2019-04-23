@@ -42,24 +42,32 @@ section.most-wanted span {
 
 @media screen and (min-width: @phoneLandscapeViewportWidth){
 .banner-slider--caption {
+   .unitize(padding, 15);
+
     span {.unitize(font-size, 18);}
     h2 {.unitize(font-size, 32);}  
     }        
 }
 @media screen and (min-width: @tabletViewportWidth){
 .banner-slider--caption {
+   .unitize(padding, 15);
+
     span {.unitize(font-size, 20);}
     h2 {.unitize(font-size, 64);}  
     }        
 }
 @media screen and (min-width: @tabletLandscapeViewportWidth){
 .banner-slider--caption {
+   .unitize(padding, 30);
+
     span {.unitize(font-size, 22);}
     h2 {.unitize(font-size, 70);}  
     }        
 }
 @media screen and (min-width: @desktopViewportWidth){
 .banner-slider--caption {
+   .unitize(padding, 60);
+
     span {.unitize(font-size, 24);}
     h2 {.unitize(font-size, 72);}  
     }    
@@ -71,12 +79,9 @@ section.most-wanted span {
     z-index: 500;
     top: auto;
     left: 20%;
-    padding: 15px;
     text-align: left;
     bottom: 20%;
     width: 100%;
-    .unitize(max-width, 1440);
-    .transition();
     
     span {
     color: @brand-primary;
