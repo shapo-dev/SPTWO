@@ -75,7 +75,9 @@
                                             {block name="frontend_widgets_banner_slider_banner_caption"}
                                             <div class="banner-slider--caption">
                                             {if $banner.altText}<span>{$banner.altText}</span>{/if}
-                                            {if $banner.title}<h2>{$banner.title}</h2>{/if}    
+                                            {if $banner.title}<h2>{$banner.title}</h2>{/if}
+                                            {if $banner.link} <a class="banner-slider--link" href="{$banner.link}" title="{$banner.title|escape}">Mehr</a>{/if}    
+
                                             </div>
                                             {/block}
                                         </div>
