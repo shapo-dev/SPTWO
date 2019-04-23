@@ -79,11 +79,13 @@
 
                                        {block name="frontend_widgets_banner_slider_banner_caption"}
                                             <div class="banner-slider--caption">
-                                            {if $banner.link}
-                                            {if $banner.altText}<span>{$banner.altText}</span>{/if}
-                                            {if $banner.title}<h2>{$banner.title}</h2>{/if}
-                                            {if $banner.link} <a class="btn is--primary is--large" href="{$banner.link}" title="{$banner.title|escape}">{s name="shopNow"}{/s}</a>{/if}
-                                            {/if}    
+                                                {if $banner.link}
+                                                <a href="{$banner.link}" title="{$banner.title|escape}">
+                                                {if $banner.altText}<span>{$banner.altText}</span>{/if}
+                                                {if $banner.title}<h2>{$banner.title}</h2>{/if}
+                                                {if $banner.link} <a class="btn is--primary is--large" href="{$banner.link}" title="{$banner.title|escape}">{s name="shopNow"}{/s}</a>{/if}
+                                                </a>
+                                                {/if}    
                                             </div>
                                             {/block}
 
