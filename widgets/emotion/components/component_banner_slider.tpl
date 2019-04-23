@@ -81,7 +81,7 @@
                                             <div class="banner-slider--caption animated bounce delay-1s">
                                                 {if $banner.link}
                                                 <a href="{$banner.link}" title="{$banner.title|escape}">
-                                                {if $banner.altText}<span>{$banner.altText}</span>{/if}
+                                                {if $banner.altText}<p>{$banner.altText}</p>{/if}
                                                 {if $banner.title}<h2>{$banner.title}</h2>{/if}
                                                 {if $banner.link} <a class="btn is--primary is--large" href="{$banner.link}" title="{$banner.title|escape}">{s name="shopNow"}{/s}</a>{/if}
                                                 </a>
