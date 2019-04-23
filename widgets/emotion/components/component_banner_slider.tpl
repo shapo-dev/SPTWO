@@ -71,6 +71,10 @@
                                                      {if $srcSet}sizes="{$itemSize}" srcset="{$srcSet}"{/if}
                                                      {if $banner.altText}alt="{$banner.altText|escape}" {/if}/>
                                             {/block}
+
+                                            {block name="frontend_widgets_banner_slider_banner_caption"}
+                                            caption
+                                            {/block}
                                         </div>
                                     {/block}
 
