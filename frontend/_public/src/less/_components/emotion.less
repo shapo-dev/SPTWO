@@ -1,40 +1,34 @@
-section.most-wanted {
-    background:@sp-pink;
-    display: flex;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
 
-section.most-wanted p {
-    width: 25%;
-    float: left;
-    height: 100%;
-}
-
-.emotion--wrapper {
-    max-width: 100%;
-}
-
-
-
-//BANNER SLIDER -- SLICK
-
-.banner--caption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner-slider--caption {
     position: absolute;
+    z-index: 500;
+    left: 0;
+    text-align: left;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    background-image: linear-gradient(to top, #000 , transparent);
+    padding: 15rem 35rem;
+    right: 0;
+    
+    p {
+    color: #FFFFFF;
+    margin: 0;
+    } 
+    h2 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 0 1% 0;            
+    } 
 
-    h1 {font-size: 2em}
-    p {font-size: 1em}
+    &:hover {
+          p,
+          h2 {
+                color:@brand-primary;
+               .transition();
 
+        }
+    } 
 
 }
 
@@ -74,36 +68,5 @@ section.most-wanted p {
 }
 
 
-.banner-slider--caption {
-    position: absolute;
-    z-index: 500;
-    left: 0;
-    text-align: left;
-    bottom: 0;
-    width: 100%;
-    background-image: linear-gradient(to top, #000 , transparent);
-    padding: 15rem 35rem;
-    right: 0;
-    
-    p {
-    color: #FFFFFF;
-    margin: 0;
-    } 
-    h2 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    line-height: 1;
-    margin: 0 0 1% 0;            
-    } 
 
-    &:hover {
-          p,
-          h2 {
-                color:@brand-primary;
-               .transition();
-
-        }
-    } 
-
-}
 
