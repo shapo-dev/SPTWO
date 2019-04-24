@@ -3,22 +3,25 @@
     position: absolute;
     z-index: 500;
     left: 0;
-    text-align: left;
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to top, #000 , transparent);
-    padding: 15rem 35rem;
     right: 0;
+    text-align: center;
+   .unitize(padding, 15);
+
     
     p {
     color: #FFFFFF;
     margin: 0;
+    .unitize(font-size, 18)    
     } 
     h2 {
     color: #FFFFFF;
     text-transform: uppercase;
     line-height: 1;
-    margin: 0 0 1% 0;            
+    margin: 0 0 1% 0;
+    .unitize(font-size, 32)                
     } 
 
     &:hover {
@@ -34,16 +37,31 @@
 
 
 
-@media screen and (min-width: @phoneLandscapeViewportWidth){
+
+@media screen and (min-width: @tabletViewportWidth){
 .banner-slider--caption {
-    text-align: center;
    .unitize(padding, 15);
 
-    p {.unitize(font-size, 18);}
-    h2 {.unitize(font-size, 32);}  
+    p {.unitize(font-size, 20);}
+    h2 {.unitize(font-size, 64);}  
     }        
 }
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+.banner-slider--caption {
+   .unitize(padding, 30);
 
+    p {.unitize(font-size, 22);}
+    h2 {.unitize(font-size, 70);}  
+    }        
+}
+@media screen and (min-width: @desktopViewportWidth){
+.banner-slider--caption {
+   .unitize(padding, 60);
+
+    p {.unitize(font-size, 24);}
+    h2 {.unitize(font-size, 72);}  
+    }    
+}
 
 
 
